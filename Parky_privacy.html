@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy & Terms - Parky</title>
+    <style>
+        :root {
+            --primary-color: #1A237E;
+            --accent-color: #FF6B35;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --bg-color: #F5F5F5;
+            --card-bg: #FFFFFF;
+            --border-color: #E0E0E0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-color);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: var(--text-primary);
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: var(--text-primary);
+            font-size: 16px;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            color: var(--text-primary);
+            font-size: 16px;
+        }
+        
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .highlight {
+            background-color: #FFF3E0;
+            padding: 15px;
+            border-left: 4px solid var(--accent-color);
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .contact-info {
+            background-color: #E3F2FD;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 5px;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+            
+            h3 {
+                font-size: 18px;
+            }
+            
+            p, li {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy & Terms of Service</h1>
+        <p class="last-updated">Last Updated: <span id="date"></span></p>
+        
+        <script>
+            document.getElementById('date').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        </script>
+        
+        <div class="highlight">
+            <strong>Important:</strong> Parky is an offline-only application. All data you create and store within the app remains on your device and is never transmitted to external servers or third parties.
+        </div>
+        
+        <h2>Privacy Policy</h2>
+        
+        <h3>1. Introduction</h3>
+        <p>Welcome to Parky ("we," "our," or "us"). Parky is a parking management application designed for apartment buildings. This Privacy Policy explains how we handle information when you use our mobile application.</p>
+        <p>By using Parky, you agree to the collection and use of information in accordance with this policy.</p>
+        
+        <h3>2. Data Collection</h3>
+        <p>Parky collects and stores the following types of data locally on your device:</p>
+        <ul>
+            <li><strong>Parking Slot Information:</strong> Slot numbers, assigned apartment numbers, availability status, and associated vehicle plate numbers.</li>
+            <li><strong>Vehicle Registry Data:</strong> Vehicle plate numbers, owner apartment numbers, vehicle make, model, and color (if provided).</li>
+            <li><strong>Violation Reports:</strong> Parking violation descriptions, slot numbers, vehicle plate numbers (if provided), violation timestamps, and optional photos taken through the app's camera feature.</li>
+            <li><strong>Local Notifications:</strong> Notification messages generated by the app for events such as new violations or slot status changes.</li>
+        </ul>
+        <p><strong>We do NOT collect:</strong></p>
+        <ul>
+            <li>Personal identification information (name, email, phone number)</li>
+            <li>Location data or GPS coordinates</li>
+            <li>Device identifiers or advertising IDs</li>
+            <li>Usage analytics or crash reports</li>
+            <li>Payment or financial information</li>
+            <li>Any data from third-party accounts or services</li>
+        </ul>
+        
+        <h3>3. Data Storage and Privacy</h3>
+        <p>All data collected by Parky is stored exclusively on your device using local storage (SharedPreferences). This means:</p>
+        <ul>
+            <li>Your data never leaves your device</li>
+            <li>We do not have access to your data</li>
+            <li>No data is transmitted to external servers</li>
+            <li>No data is shared with third parties</li>
+            <li>Data persists on your device until you uninstall the app or manually clear app data</li>
+        </ul>
+        
+        <h3>4. Camera and Photo Access</h3>
+        <p>Parky requests camera and photo library permissions to allow you to take photos when reporting parking violations. This feature is optional. Photos you take are stored locally on your device and are only accessible within the app. We do not access, transmit, or share these photos.</p>
+        <p>You can revoke camera or photo library permissions at any time through your device settings, though this will disable the photo capture feature for violation reports.</p>
+        
+        <h3>5. Use of Data</h3>
+        <p>The data collected by Parky is used solely for the following purposes:</p>
+        <ul>
+            <li>Managing and displaying parking slot availability</li>
+            <li>Maintaining a registry of vehicles and their associated apartments</li>
+            <li>Recording and tracking parking violations</li>
+            <li>Generating local notifications for app events</li>
+            <li>Providing core app functionality</li>
+        </ul>
+        <p>We do not use your data for advertising, marketing, analytics, or any other commercial purposes.</p>
+        
+        <h3>6. Data Sharing</h3>
+        <p>We do not share, sell, rent, or disclose your data to any third parties. Since all data remains on your device, there is no mechanism for data sharing.</p>
+        
+        <h3>7. Third-Party Services</h3>
+        <p>Parky uses the following third-party libraries for core functionality:</p>
+        <ul>
+            <li><strong>SharedPreferences:</strong> For local data storage on your device</li>
+            <li><strong>Image Picker:</strong> For accessing your device's camera and photo library (only when you choose to take a photo)</li>
+        </ul>
+        <p>These libraries operate locally on your device and do not transmit data to external servers. We do not use advertising networks, analytics services, or any tracking technologies.</p>
+        
+        <h3>8. Data Security</h3>
+        <p>Since all data is stored locally on your device, data security depends on your device's security measures. We recommend:</p>
+        <ul>
+            <li>Using device lock screens (PIN, password, fingerprint, or face recognition)</li>
+            <li>Keeping your device's operating system updated</li>
+            <li>Not sharing your device with unauthorized users</li>
+            <li>Using app-specific security features if available on your device</li>
+        </ul>
+        <p>If you uninstall Parky, all locally stored data will be permanently deleted.</p>
+        
+        <h3>9. Your Rights</h3>
+        <p>You have complete control over your data:</p>
+        <ul>
+            <li>You can view all data stored in the app through the app's interface</li>
+            <li>You can edit or delete any data you have created</li>
+            <li>You can clear all app data by uninstalling the app or clearing app data through your device settings</li>
+            <li>You can revoke camera or photo library permissions at any time</li>
+        </ul>
+        
+        <h3>10. Children's Privacy</h3>
+        <p>Parky is not intended for use by children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with information, please contact us. Since all data is stored locally, you can remove any data by uninstalling the app.</p>
+        
+        <h3>11. Changes to This Privacy Policy</h3>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this document. You are advised to review this Privacy Policy periodically for any changes.</p>
+        <p>Changes to this Privacy Policy are effective when they are posted in the app or on our website (if applicable).</p>
+        
+        <h2>Terms of Service</h2>
+        
+        <h3>1. Acceptance of Terms</h3>
+        <p>By downloading, installing, or using Parky, you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the app.</p>
+        
+        <h3>2. Description of Service</h3>
+        <p>Parky is a mobile application that provides parking management functionality for apartment buildings. The app allows users to:</p>
+        <ul>
+            <li>Manage parking slot availability and assignments</li>
+            <li>Register and track vehicles associated with apartments</li>
+            <li>Report and track parking violations</li>
+            <li>Receive local notifications about parking-related events</li>
+        </ul>
+        
+        <h3>3. App Usage</h3>
+        <p>You agree to use Parky only for lawful purposes and in accordance with these Terms. You agree not to:</p>
+        <ul>
+            <li>Use the app in any way that violates any applicable local, state, national, or international law or regulation</li>
+            <li>Use the app to harass, abuse, or harm other persons</li>
+            <li>Upload false, misleading, or fraudulent information</li>
+            <li>Interfere with or disrupt the app's functionality</li>
+            <li>Attempt to reverse engineer, decompile, or disassemble the app</li>
+            <li>Use the app for any commercial purpose without our express written permission</li>
+        </ul>
+        
+        <h3>4. User Responsibility</h3>
+        <p>You are solely responsible for:</p>
+        <ul>
+            <li>The accuracy and legality of all data you enter into the app</li>
+            <li>Maintaining the security of your device and app access</li>
+            <li>Backing up your data if desired (the app does not provide cloud backup)</li>
+            <li>Complying with all applicable laws and regulations regarding parking management and data privacy</li>
+            <li>Obtaining necessary permissions before taking photos of vehicles or property</li>
+        </ul>
+        <p>You acknowledge that Parky is a tool to assist with parking management and does not replace professional property management services or legal advice.</p>
+        
+        <h3>5. Offline Functionality</h3>
+        <p>Parky operates entirely offline. The app does not require an internet connection to function. All data is stored locally on your device. You are responsible for:</p>
+        <ul>
+            <li>Ensuring your device has sufficient storage space</li>
+            <li>Backing up your data if you wish to preserve it</li>
+            <li>Understanding that data loss may occur if the app is uninstalled or device data is cleared</li>
+        </ul>
+        
+        <h3>6. Camera and Photo Permissions</h3>
+        <p>If you choose to use the photo capture feature for violation reports, you agree to:</p>
+        <ul>
+            <li>Only take photos of situations you have a legal right to photograph</li>
+            <li>Respect privacy rights of individuals</li>
+            <li>Not use photos for harassment or illegal purposes</li>
+            <li>Comply with local laws regarding photography</li>
+        </ul>
+        
+        <h3>7. Limitation of Liability</h3>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, PARKY AND ITS DEVELOPERS SHALL NOT BE LIABLE FOR:</p>
+        <ul>
+            <li>Any indirect, incidental, special, consequential, or punitive damages</li>
+            <li>Loss of profits, data, use, goodwill, or other intangible losses</li>
+            <li>Damages resulting from your use or inability to use the app</li>
+            <li>Data loss due to device failure, app uninstallation, or user error</li>
+            <li>Any decisions made based on information in the app</li>
+        </ul>
+        <p>The app is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, either express or implied.</p>
+        
+        <h3>8. App Availability</h3>
+        <p>We do not guarantee that the app will be available at all times or that it will be error-free. The app may be subject to:</p>
+        <ul>
+            <li>Maintenance and updates</li>
+            <li>Technical issues or bugs</li>
+            <li>Device compatibility limitations</li>
+            <li>Discontinuation at any time</li>
+        </ul>
+        
+        <h3>9. Intellectual Property</h3>
+        <p>Parky, including its original code, design, graphics, and content, is the property of its developers and is protected by copyright and other intellectual property laws. You may not:</p>
+        <ul>
+            <li>Copy, modify, or distribute the app or its components</li>
+            <li>Reverse engineer or attempt to extract source code</li>
+            <li>Use the app's name or branding without permission</li>
+        </ul>
+        
+        <h3>10. Termination</h3>
+        <p>You may stop using Parky at any time by uninstalling the app. We reserve the right to discontinue the app or restrict access at any time without notice.</p>
+        <p>Upon termination or uninstallation, all locally stored data will be permanently deleted unless you have backed it up separately.</p>
+        
+        <h3>11. Changes to Terms</h3>
+        <p>We reserve the right to modify these Terms at any time. We will notify you of any material changes by updating the "Last Updated" date. Your continued use of the app after changes are posted constitutes acceptance of the modified Terms.</p>
+        
+        <h3>12. Governing Law</h3>
+        <p>These Terms shall be governed by and construed in accordance with applicable local laws, without regard to conflict of law provisions.</p>
+        
+        <h3>13. Severability</h3>
+        <p>If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.</p>
+        
+        <h2>Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy or Terms of Service, please contact us:</p>
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:mohamedhashimrezk73@gmail.com">mohamedhashimrezk73@gmail.com</a></p>
+        </div>
+        <p style="margin-top: 20px; color: var(--text-secondary); font-size: 14px;">
+            By using Parky, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy and Terms of Service.
+        </p>
+    </div>
+</body>
+</html>
