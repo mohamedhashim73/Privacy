@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>الدعم الفني - صندوق 105 حربية</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, "Cairo", sans-serif;
+      background: #f8f8f8;
+      direction: rtl;
+      margin: 0;
+      padding: 20px;
+      color: #1B1620;
+    }
+    .card {
+      max-width: 700px;
+      margin: 30px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 26px;
+      color: #074F60;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    .email-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .email-link {
+      color: #074F60;
+      text-decoration: none;
+      font-weight: bold;
+      word-break: break-all;
+    }
+    .copy-btn {
+      background: #074F60;
+      color: #ffffff;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .copy-btn:hover {
+      background: #053a47;
+    }
+    @media (max-width: 480px) {
+      body { padding: 10px; }
+      .card { padding: 20px; }
+      h1 { font-size: 22px; }
+      p { font-size: 16px; }
+      .copy-btn { padding: 5px 10px; font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>الدعم الفني</h1>
+    <p>
+      في حال وجود أي استفسار أو مشكلة متعلقة بتطبيق صندوق 105 حربية، يرجى التواصل معنا عبر البريد الإلكتروني التالي:
+    </p>
+    <div class="email-container">
+      <a id="supportEmail" class="email-link" href="mailto:mohamedhashimrezk73@gmail.com">
+        mohamedhashimrezk73@gmail.com
+      </a>
+      <button class="copy-btn" onclick="copyEmail()">نسخ البريد</button>
+    </div>
+    <p>
+      سنكون سعداء بمساعدتك في أقرب وقت ممكن.
+    </p>
+  </div>
+
+  <script>
+    function copyEmail() {
+      const email = document.getElementById('supportEmail').textContent;
+      navigator.clipboard.writeText(email).then(() => {
+        alert('تم نسخ البريد الإلكتروني!');
+      }).catch(err => {
+        alert('حدث خطأ أثناء النسخ');
+        console.error(err);
+      });
+    }
+  </script>
+
+</body>
+</html>
