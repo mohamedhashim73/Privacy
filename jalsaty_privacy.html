@@ -1,1 +1,331 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>جلساتي - سياسة الخصوصية والشروط والأحكام</title>
+    <style>
+      :root{
+        --bg: #f6f8fb;
+        --card: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --border: rgba(15, 23, 42, 0.10);
+        --shadow: 0 10px 25px rgba(2, 6, 23, 0.08);
+        --primary: #0b5fa5; /* medical blue */
+        --primary-weak: rgba(11, 95, 165, 0.10);
+        --danger: #b42318;
+      }
+
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      body{
+        margin: 0;
+        background: radial-gradient(1200px 600px at 50% -150px, var(--primary-weak), transparent 60%),
+                    linear-gradient(180deg, var(--bg), #ffffff);
+        color: var(--text);
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans Arabic", "Noto Sans", Arial, sans-serif;
+        line-height: 1.7;
+      }
+
+      a{ color: var(--primary); text-decoration: none; }
+      a:hover{ text-decoration: underline; }
+
+      .page{
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 24px 16px 40px;
+      }
+
+      .header{
+        display: grid;
+        gap: 10px;
+        margin-bottom: 14px;
+        padding: 18px 18px 10px;
+      }
+
+      .brand{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .logo{
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, var(--primary), #3a8ad6);
+        box-shadow: 0 10px 18px rgba(11, 95, 165, 0.25);
+      }
+
+      h1{
+        font-size: 22px;
+        margin: 0;
+        letter-spacing: 0.2px;
+      }
+
+      .subtitle{
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .grid{
+        display: grid;
+        gap: 14px;
+      }
+
+      .card{
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        box-shadow: var(--shadow);
+        padding: 18px;
+      }
+
+      h2{
+        font-size: 18px;
+        margin: 0 0 10px;
+        color: var(--text);
+      }
+
+      h3{
+        font-size: 15px;
+        margin: 14px 0 8px;
+        color: var(--text);
+      }
+
+      p{ margin: 0 0 10px; color: var(--text); }
+      .muted{ color: var(--muted); }
+
+      ul{
+        margin: 10px 0 0;
+        padding: 0 18px 0 0;
+      }
+      li{ margin: 6px 0; color: var(--text); }
+
+      .pill{
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: var(--primary-weak);
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 12px;
+      }
+
+      .two{
+        display: grid;
+        gap: 14px;
+        grid-template-columns: 1fr;
+      }
+      @media (min-width: 860px){
+        .two{ grid-template-columns: 1fr 1fr; }
+        h1{ font-size: 24px; }
+      }
+
+      .divider{
+        height: 1px;
+        background: var(--border);
+        margin: 12px 0;
+      }
+
+      .callout{
+        border-radius: 14px;
+        border: 1px solid var(--border);
+        background: #fbfdff;
+        padding: 12px 12px;
+      }
+
+      .danger{
+        border-color: rgba(180, 35, 24, 0.20);
+        background: rgba(180, 35, 24, 0.05);
+      }
+
+      .footer{
+        margin-top: 14px;
+        color: var(--muted);
+        font-size: 12px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="header card">
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            <h1>جلساتي — سياسة الخصوصية والشروط والأحكام</h1>
+            <p class="subtitle">تطبيق لإدارة المرضى والجلسات وخطط العلاج الطبيعي داخل العيادة.</p>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <p class="muted">
+          <span class="pill">وضع العمل: دون اتصال</span>
+          <span class="pill">تخزين: محلي على الجهاز</span>
+          <span class="pill">لا حسابات</span>
+          <span class="pill">لا إعلانات</span>
+        </p>
+        <p class="muted" style="margin-top:8px;">
+          تاريخ السريان: <strong>2026-01-29</strong>
+        </p>
+      </header>
+
+      <section class="grid">
+        <div class="two">
+          <article class="card">
+            <h2>ملخص سريع</h2>
+            <p>
+              <strong>جلساتي</strong> يساعد أطباء ومعالجي العلاج الطبيعي وطاقم العيادة على تنظيم بيانات المرضى
+              وخطط العلاج وعدد الجلسات والحضور والملاحظات والاطلاع على جدول اليوم.
+            </p>
+            <ul>
+              <li><strong>مستخدمون مستهدفون</strong>: العاملون في عيادة العلاج الطبيعي (أطباء/معالجون/مسؤولون).</li>
+              <li><strong>الاتصال بالإنترنت</strong>: التطبيق مصمم ليعمل <strong>دون اتصال</strong> ولا يتطلب إنترنت للاستخدام الأساسي.</li>
+              <li><strong>الحسابات والمزامنة</strong>: لا يوجد تسجيل دخول، ولا مزامنة سحابية داخل التطبيق.</li>
+              <li><strong>مكان حفظ البيانات</strong>: البيانات تُحفظ محليًا على جهاز المستخدم (قاعدة بيانات SQLite) وإعدادات بسيطة محليًا.</li>
+            </ul>
+          </article>
+
+          <article class="card danger">
+            <h2>تنبيه مهم (بيانات صحية)</h2>
+            <p>
+              قد يتضمن التطبيق معلومات متعلقة بالصحة (مثل التشخيص وملاحظات العلاج). مسؤولية حماية الجهاز
+              والوصول إليه تقع على عاتق المستخدم/العيادة.
+            </p>
+            <p class="muted">
+              إذا كان جهازك مضبوطًا على نسخ احتياطي للنظام (مثل نسخ احتياطي الجهاز)، فقد تُدرج بيانات التطبيق ضمن النسخ الاحتياطي
+              وفق إعدادات النظام لديك.
+            </p>
+          </article>
+        </div>
+
+        <article class="card">
+          <h2>سياسة الخصوصية</h2>
+          <p class="muted">
+            توضح هذه السياسة كيفية تعامل تطبيق <strong>جلساتي</strong> مع البيانات داخل التطبيق. باستخدامك للتطبيق، فإنك توافق
+            على هذه السياسة.
+          </p>
+
+          <h3>1) Data Collection (جمع البيانات)</h3>
+          <p>يجمع التطبيق فقط البيانات التي يُدخلها المستخدم داخل العيادة لإدارة العمل، ومنها على سبيل المثال:</p>
+          <ul>
+            <li><strong>بيانات المريض</strong>: الاسم، العمر، التشخيص.</li>
+            <li><strong>الخطة العلاجية</strong>: عدد الجلسات، أنواع التمارين، ملاحظات الخطة.</li>
+            <li><strong>الجلسات</strong>: تاريخ الجلسة، الحضور/الغياب، ملاحظات الجلسة.</li>
+            <li><strong>إعدادات التطبيق</strong>: مثل وضع المظهر (فاتح/داكن/حسب النظام).</li>
+          </ul>
+          <div class="callout" style="margin-top:12px;">
+            <p class="muted" style="margin:0;">
+              <strong>ما لا نجمعه</strong>: لا يجمع التطبيق بيانات حسابات، ولا يطلب رقم هاتف أو عنوان، ولا يجمع موقعك،
+              ولا يرسل بيانات تحليلات أو تتبع لاستخدامك داخل التطبيق.
+            </p>
+          </div>
+
+          <h3>2) Use of Data (استخدام البيانات)</h3>
+          <p>تُستخدم البيانات محليًا على الجهاز للأغراض التالية فقط:</p>
+          <ul>
+            <li>إنشاء وإدارة ملفات المرضى.</li>
+            <li>إدارة الخطط العلاجية وتتبع عدد الجلسات المنجزة.</li>
+            <li>تسجيل الحضور والملاحظات لكل جلسة.</li>
+            <li>عرض جدول اليوم ومتابعة تقدم المريض داخل العيادة.</li>
+            <li>حفظ تفضيلات المظهر.</li>
+          </ul>
+
+          <h3>3) Data Sharing (مشاركة البيانات)</h3>
+          <p>
+            لا يقوم التطبيق بمشاركة بياناتك مع أي جهة خارجية عبر الشبكة ضمن الميزات الحالية.
+            البيانات تبقى على جهازك ما لم يقم المستخدم يدويًا بمشاركتها (مثل مشاركة لقطة شاشة أو تصدير/نسخ يدوي خارج التطبيق).
+          </p>
+
+          <h3>4) Ads &amp; Third-Party Services (الإعلانات وخدمات الطرف الثالث)</h3>
+          <p>
+            لا يحتوي التطبيق على إعلانات، ولا يستخدم خدمات تحليلات، ولا يدمج SDKs للتتبع ضمن نطاق الميزات الحالية.
+          </p>
+          <p class="muted">
+            يستخدم التطبيق حزمًا برمجية تعمل محليًا مثل <strong>SQLite</strong> للتخزين المحلي و<strong>Provider</strong> لإدارة الحالة،
+            و<strong>Shared Preferences</strong> لحفظ الإعدادات محليًا. هذه المكونات لا تُرسل بياناتك إلى خوادم خارجية من تلقاء نفسها.
+          </p>
+
+          <h3>5) Data Security (أمن البيانات)</h3>
+          <p>
+            يتم تخزين البيانات محليًا داخل مساحة التطبيق على جهازك. نعتمد على آليات حماية نظام التشغيل (مثل عزل التطبيقات)
+            لحماية البيانات من تطبيقات أخرى.
+          </p>
+          <ul>
+            <li><strong>يوصى</strong> بتفعيل رمز قفل/بصمة للجهاز وعدم مشاركة الجهاز مع غير المخولين.</li>
+            <li>أي شخص يحصل على وصول فعلي غير مصرح به للجهاز قد يتمكن من الوصول إلى البيانات وفق إعدادات الجهاز.</li>
+          </ul>
+
+          <h3>6) Children’s Privacy (خصوصية الأطفال)</h3>
+          <p>
+            التطبيق مخصص للاستخدام المهني داخل العيادة وليس موجّهًا للأطفال كمستخدمين نهائيين. إذا تم إدخال بيانات تخص قاصرًا،
+            فإن مسؤولية الحصول على الموافقات اللازمة والالتزام بالقوانين واللوائح المحلية تقع على عاتق العيادة/المستخدم.
+          </p>
+
+          <h3>7) Changes to This Policy (التغييرات على هذه السياسة)</h3>
+          <p>
+            قد نقوم بتحديث هذه السياسة عند إضافة ميزات جديدة (مثل مزامنة سحابية اختيارية أو مشاركة بيانات).
+            سنقوم بتحديث تاريخ السريان في أعلى الصفحة عند أي تعديل جوهري.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Terms &amp; Conditions (الشروط والأحكام)</h2>
+          <p class="muted">
+            باستخدامك لتطبيق <strong>جلساتي</strong>، فإنك توافق على الشروط التالية. إذا لم توافق، يرجى عدم استخدام التطبيق.
+          </p>
+
+          <h3>1) App Usage (استخدام التطبيق)</h3>
+          <ul>
+            <li>الغرض من التطبيق هو إدارة المرضى والجلسات وخطط العلاج داخل عيادة العلاج الطبيعي.</li>
+            <li>التطبيق أداة تنظيمية ولا يعد بديلاً عن الحكم الطبي أو التقييم السريري.</li>
+            <li>قد تختلف النتائج وجودة البيانات بناءً على دقة الإدخال والتزام المستخدم بإجراءات العيادة.</li>
+          </ul>
+
+          <h3>2) User Responsibility (مسؤولية المستخدم)</h3>
+          <ul>
+            <li><strong>دقة البيانات</strong>: أنت مسؤول عن صحة ودقة البيانات المدخلة ومراجعتها.</li>
+            <li><strong>السرية والصلاحيات</strong>: أنت مسؤول عن تقييد الوصول للتطبيق والبيانات داخل العيادة.</li>
+            <li><strong>الامتثال</strong>: أنت مسؤول عن الالتزام بالقوانين واللوائح المحلية المتعلقة بحماية البيانات والخصوصية والسجلات الصحية.</li>
+            <li><strong>النسخ الاحتياطي</strong>: إذا كنت تعتمد على نسخ احتياطي للجهاز، فأنت مسؤول عن إعداداته وحمايته وإدارته.</li>
+          </ul>
+
+          <h3>3) Limitation of Liability (حدود المسؤولية)</h3>
+          <p>
+            يتم توفير التطبيق "كما هو" و"حسب التوفر". إلى الحد الذي يسمح به القانون، لا نتحمل المسؤولية عن أي خسائر
+            أو أضرار مباشرة أو غير مباشرة أو تبعية ناتجة عن:
+          </p>
+          <ul>
+            <li>أخطاء إدخال البيانات أو قرارات علاجية اتُخذت اعتمادًا على بيانات غير دقيقة.</li>
+            <li>فقدان البيانات بسبب حذف المستخدم، أو تغيير/تعطل الجهاز، أو إعدادات النسخ الاحتياطي للنظام.</li>
+            <li>وصول غير مصرح به للجهاز نتيجة ضعف حماية الجهاز أو مشاركة بيانات الدخول/الجهاز.</li>
+          </ul>
+
+          <h3>4) App Ownership (ملكية التطبيق)</h3>
+          <p>
+            جميع حقوق الملكية الفكرية في التطبيق وواجهاته وعناصره محفوظة لمالكيها. يمنح لك التطبيق ترخيصًا محدودًا وغير حصري
+            لاستخدامه لأغراض العيادة وفق هذه الشروط.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Contact Us (تواصل معنا)</h2>
+          <p>
+            لأي استفسارات بخصوص سياسة الخصوصية أو الشروط والأحكام أو طلبات عامة متعلقة بالتطبيق، تواصل معنا عبر البريد:
+          </p>
+          <p style="font-size: 16px; font-weight: 800; margin: 8px 0 0;">
+            <a href="mailto:mohamedhashimrezk73@gmail.com">mohamedhashimrezk73@gmail.com</a>
+          </p>
+        </article>
+
+        <div class="footer">
+          © جلساتي — وثيقة سياسة الخصوصية والشروط والأحكام
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
 
