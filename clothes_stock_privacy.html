@@ -1,1 +1,389 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مخزون الملابس - سياسة الخصوصية والشروط والأحكام</title>
+  <style>
+    :root{
+      --navy:#0B1E3A;
+      --light-gray:#F2F4F7;
+      --surface:#FFFFFF;
+      --text:#0F172A;
+      --muted:#475569;
+      --border:#E5E7EB;
+      --shadow: 0 10px 24px rgba(2, 6, 23, 0.08);
+      --radius: 16px;
+      --max: 900px;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans Arabic", "Noto Sans", sans-serif;
+      background: var(--light-gray);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    a{ color: var(--navy); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 20px 14px 40px;
+    }
+
+    .header{
+      background: linear-gradient(180deg, rgba(11,30,58,0.06), rgba(255,255,255,0));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 16px;
+      margin-bottom: 14px;
+    }
+
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+
+    .title{
+      margin:0;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: 0.2px;
+    }
+
+    .subtitle{
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background: rgba(11,30,58,0.08);
+      color: var(--navy);
+      border: 1px solid rgba(11,30,58,0.16);
+      padding: 8px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .card{
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 16px;
+    }
+
+    h2{
+      margin: 0 0 10px;
+      font-size: 16px;
+      font-weight: 900;
+      color: var(--navy);
+    }
+
+    h3{
+      margin: 14px 0 8px;
+      font-size: 14px;
+      font-weight: 900;
+      color: var(--text);
+    }
+
+    p{ margin: 8px 0; color: var(--text); }
+    ul{ margin: 8px 0; padding: 0 18px 0 0; }
+    li{ margin: 6px 0; color: var(--text); }
+    .muted{ color: var(--muted); }
+
+    .toc{
+      display:flex;
+      flex-wrap:wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 10px;
+      font-size: 12px;
+      background: #fff;
+      color: var(--text);
+    }
+
+    .kvs{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .kv{
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px;
+      background: rgba(242,244,247,0.35);
+    }
+
+    .kv b{
+      display:block;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+
+    .footer{
+      margin-top: 14px;
+      text-align:center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (min-width: 760px){
+      .wrap{ padding: 28px 18px 54px; }
+      .title{ font-size: 22px; }
+      .grid{ gap: 14px; }
+      .kvs{ grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="header" aria-label="Header">
+      <div class="brand">
+        <div>
+          <h1 class="title">مخزون الملابس</h1>
+          <p class="subtitle">سياسة الخصوصية + الشروط والأحكام (Privacy Policy + Terms &amp; Conditions)</p>
+        </div>
+        <div class="badge" aria-label="Offline only badge">يعمل بدون حسابات • تخزين محلي على الجهاز</div>
+      </div>
+
+      <div class="kvs" role="list">
+        <div class="kv" role="listitem">
+          <b>تاريخ السريان (Effective Date)</b>
+          <span class="muted">2026-01-29</span>
+        </div>
+        <div class="kv" role="listitem">
+          <b>جهة التواصل (Contact)</b>
+          <span class="muted"><a href="mailto:mohamedhashimrezk73@gmail.com">mohamedhashimrezk73@gmail.com</a></span>
+        </div>
+      </div>
+
+      <div class="toc" aria-label="Table of contents">
+        <a class="chip" href="#privacy">سياسة الخصوصية</a>
+        <a class="chip" href="#data-collection">Data Collection</a>
+        <a class="chip" href="#use-of-data">Use of Data</a>
+        <a class="chip" href="#data-sharing">Data Sharing</a>
+        <a class="chip" href="#ads-third-party">Ads &amp; Third-Party Services</a>
+        <a class="chip" href="#security">Data Security</a>
+        <a class="chip" href="#children">Children’s Privacy</a>
+        <a class="chip" href="#changes">Changes to This Policy</a>
+        <a class="chip" href="#terms">Terms &amp; Conditions</a>
+        <a class="chip" href="#app-usage">App Usage</a>
+        <a class="chip" href="#user-responsibility">User Responsibility</a>
+        <a class="chip" href="#liability">Limitation of Liability</a>
+        <a class="chip" href="#ownership">App Ownership</a>
+        <a class="chip" href="#contact">Contact Us</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card" id="privacy">
+        <h2>سياسة الخصوصية (Privacy Policy)</h2>
+        <p>
+          تطبيق <b>مخزون الملابس</b> هو تطبيق لإدارة مخزون محل ملابس داخلية (رجالي/حريمي/أطفال) ويعمل <b>بدون حسابات</b> وبشكل <b>غير متصل بالإنترنت</b>.
+          تشرح هذه الوثيقة ما الذي يتم جمعه من بيانات داخل التطبيق، وكيف يتم استخدامه، وما الذي لا يتم جمعه.
+        </p>
+
+        <div class="kvs" role="list">
+          <div class="kv" role="listitem">
+            <b>اسم التطبيق (App Name)</b>
+            مخزون الملابس
+          </div>
+          <div class="kv" role="listitem">
+            <b>الغرض (Purpose)</b>
+            إدارة المخزون، تصنيفات سريعة، تنبيهات نقص المخزون، متابعة الأكثر مبيعًا، إعدادات حد التنبيه.
+          </div>
+          <div class="kv" role="listitem">
+            <b>اتصال الإنترنت (Online/Offline)</b>
+            يعمل بدون إنترنت، ولا يتطلب اتصالًا بالشبكة للاستخدام الأساسي.
+          </div>
+          <div class="kv" role="listitem">
+            <b>الحسابات/المزامنة (Accounts/Cloud Sync)</b>
+            لا توجد حسابات، ولا توجد مزامنة سحابية داخل التطبيق في النسخة الحالية.
+          </div>
+        </div>
+      </article>
+
+      <article class="card" id="data-collection">
+        <h2>Data Collection (جمع البيانات)</h2>
+        <p>
+          التطبيق مصمم ليكون تطبيق إدارة مخزون محلي. لذلك:
+        </p>
+        <ul>
+          <li><b>لا نجمع بيانات شخصية</b> مثل الاسم، رقم الهاتف، البريد الإلكتروني، العنوان، أو أي معرفات مستخدم.</li>
+          <li><b>لا ننشئ حسابات</b> ولا نطلب تسجيل دخول.</li>
+          <li><b>لا نجمع موقعك</b> ولا نطلب أذونات الموقع.</li>
+          <li><b>لا نصل إلى جهات الاتصال</b> ولا الكاميرا ولا الميكروفون.</li>
+        </ul>
+
+        <h3>ما الذي يتم تخزينه محليًا على جهازك</h3>
+        <p class="muted">
+          يقوم التطبيق بحفظ بيانات عملك محليًا على الجهاز (Local Storage) لاستخدامه داخل التطبيق فقط، مثل:
+        </p>
+        <ul>
+          <li>بيانات الأصناف المخزنية: النوع (رجالي/حريمي/أطفال)، الموديل، المقاس، اللون، الكمية.</li>
+          <li>إحصاءات داخلية للأصناف: عدد القطع المباعة لكل صنف (لإظهار "أكثر الأصناف مبيعًا").</li>
+          <li>إعدادات التطبيق: حد تنبيه نقص المخزون (Low Stock Threshold).</li>
+          <li>بيانات تجريبية (Demo) يتم إنشاؤها لأول مرة فقط إن لم توجد بيانات سابقة.</li>
+        </ul>
+
+        <h3>ما الذي لا يتم جمعه أو تخزينه</h3>
+        <ul>
+          <li>لا يتم جمع أو تخزين كلمات مرور أو بيانات دفع أو معلومات بنكية.</li>
+          <li>لا يتم إرسال بيانات المخزون إلى خوادم خارجية بواسطة التطبيق.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="use-of-data">
+        <h2>Use of Data (استخدام البيانات)</h2>
+        <p>يستخدم التطبيق البيانات المحلية على جهازك للأغراض التالية فقط:</p>
+        <ul>
+          <li>عرض قائمة المخزون وبطاقات الأصناف.</li>
+          <li>تمكين البحث والتصفية حسب النوع والمقاس.</li>
+          <li>حساب وإظهار تنبيهات نقص المخزون بناءً على الحد الذي تختاره.</li>
+          <li>حساب وإظهار "أكثر الأصناف مبيعًا" بناءً على عدد المبيعات المسجل داخل التطبيق.</li>
+          <li>حفظ إعداداتك لسهولة الاستخدام في المرات القادمة.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="data-sharing">
+        <h2>Data Sharing (مشاركة البيانات)</h2>
+        <p>
+          <b>لا يشارك التطبيق بياناتك مع أي جهة خارجية</b> لأن البيانات محفوظة محليًا على جهازك ولا توجد مزامنة/رفع سحابي في النسخة الحالية.
+        </p>
+        <p class="muted">
+          ملاحظة: إذا قمت بمشاركة جهازك مع أشخاص آخرين أو سمحت لهم بالوصول إليه، فقد يتمكنون من الوصول إلى بيانات المخزون المخزنة محليًا عبر فتح التطبيق.
+        </p>
+      </article>
+
+      <article class="card" id="ads-third-party">
+        <h2>Ads &amp; Third-Party Services (الإعلانات وخدمات الطرف الثالث)</h2>
+        <ul>
+          <li><b>الإعلانات:</b> التطبيق لا يحتوي على إعلانات.</li>
+          <li><b>التتبع/التحليلات:</b> التطبيق لا يضم أدوات تتبع أو تحليلات مدمجة في النسخة الحالية.</li>
+          <li><b>خدمات طرف ثالث:</b> يعتمد التطبيق على مكوّنات نظام التشغيل/حزم Flutter لتخزين البيانات محليًا (مثل التخزين المحلي على الجهاز). لا يعني ذلك مشاركة بياناتك خارجيًا.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="security">
+        <h2>Data Security (أمان البيانات)</h2>
+        <p>
+          نحرص على تقليل جمع البيانات إلى الحد الأدنى. وبما أن البيانات تُحفظ محليًا على الجهاز:
+        </p>
+        <ul>
+          <li>بياناتك تبقى على جهازك ولا يتم إرسالها إلى خوادمنا.</li>
+          <li>حماية البيانات تعتمد أيضًا على إعدادات أمان جهازك (قفل الشاشة، بصمة، تشفير الجهاز، نسخ احتياطية نظامية).</li>
+          <li>في حال حذف التطبيق أو مسح بياناته من إعدادات النظام، قد تُحذف بيانات المخزون نهائيًا من الجهاز.</li>
+        </ul>
+        <p class="muted">
+          ننصح بإجراءات احترازية على مستوى الجهاز إذا كانت بيانات المخزون حساسة لعملك.
+        </p>
+      </article>
+
+      <article class="card" id="children">
+        <h2>Children’s Privacy (خصوصية الأطفال)</h2>
+        <p>
+          التطبيق موجّه لإدارة مخزون متجر وليس موجّهًا للأطفال. لا نجمع معلومات شخصية من الأطفال عمدًا.
+          إذا كنت ولي أمر وتعتقد أن طفلًا قد أدخل بيانات شخصية داخل التطبيق (وهو أمر غير مطلوب)، يرجى التواصل معنا لإرشادك بشأن الخطوات الممكنة.
+        </p>
+      </article>
+
+      <article class="card" id="changes">
+        <h2>Changes to This Policy (التغييرات على هذه السياسة)</h2>
+        <p>
+          قد نقوم بتحديث هذه السياسة من وقت لآخر (مثلًا عند إضافة مزامنة سحابية أو ميزات جديدة). سيتم تحديث تاريخ السريان أعلى الصفحة.
+          استمرارك في استخدام التطبيق بعد نشر التحديث يعني موافقتك على السياسة المحدّثة.
+        </p>
+      </article>
+
+      <article class="card" id="terms">
+        <h2>Terms &amp; Conditions (الشروط والأحكام)</h2>
+        <p>
+          باستخدامك لتطبيق <b>مخزون الملابس</b> فإنك تقر بأنك قرأت وفهمت ووافقت على هذه الشروط. إذا لم توافق، يرجى عدم استخدام التطبيق.
+        </p>
+
+        <h3 id="app-usage">App Usage (استخدام التطبيق)</h3>
+        <ul>
+          <li>التطبيق مخصص لإدارة المخزون والعمليات الداخلية لمتجر الملابس الداخلية.</li>
+          <li>لا يجوز استخدام التطبيق لأي غرض غير قانوني أو مسيء أو ينتهك حقوق الآخرين.</li>
+          <li>قد تتغير واجهات وميزات التطبيق مع التحديثات لتحسين الأداء وتجربة الاستخدام.</li>
+        </ul>
+
+        <h3 id="user-responsibility">User Responsibility (مسؤولية المستخدم)</h3>
+        <ul>
+          <li>أنت مسؤول عن دقة البيانات التي تدخلها (الموديلات، المقاسات، الألوان، الكميات، المبيعات) وأي قرارات عمل مبنية عليها.</li>
+          <li>أنت مسؤول عن حماية جهازك ومنع الوصول غير المصرّح به إلى التطبيق والبيانات المخزنة محليًا.</li>
+          <li>يوصى بعمل نسخ احتياطية على مستوى الجهاز وفقًا لإعدادات نظام التشغيل، لأن التطبيق لا يوفر مزامنة سحابية في النسخة الحالية.</li>
+        </ul>
+
+        <h3 id="liability">Limitation of Liability (حدود المسؤولية)</h3>
+        <p>
+          يتم توفير التطبيق “كما هو” و“حسب التوفر”. إلى الحد الذي يسمح به القانون:
+        </p>
+        <ul>
+          <li>لا نتحمل المسؤولية عن أي خسائر مباشرة أو غير مباشرة ناتجة عن استخدام التطبيق أو الاعتماد على بياناته (مثل أخطاء إدخال، حذف بيانات، فقدان جهاز، أعطال نظام التشغيل).</li>
+          <li>لا نضمن أن التطبيق سيكون خاليًا من الأخطاء أو الانقطاعات في جميع الأوقات، مع بذل جهود معقولة لتحسينه.</li>
+        </ul>
+
+        <h3 id="ownership">App Ownership (ملكية التطبيق)</h3>
+        <ul>
+          <li>جميع حقوق الملكية الفكرية المتعلقة بالتطبيق (الكود، التصميم، العلامة) مملوكة لمالك/مطور التطبيق.</li>
+          <li>لا تمنحك هذه الشروط أي حق في استخدام العلامة أو إعادة توزيع التطبيق أو تعديل مكوناته خارج ما يسمح به القانون أو ترخيص المتجر.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="contact">
+        <h2>Contact Us (تواصل معنا)</h2>
+        <p>
+          لأي استفسارات تتعلق بالخصوصية أو الشروط والأحكام أو طلبات الدعم، تواصل معنا عبر البريد الإلكتروني:
+        </p>
+        <p><b><a href="mailto:mohamedhashimrezk73@gmail.com">mohamedhashimrezk73@gmail.com</a></b></p>
+      </article>
+    </section>
+
+    <div class="footer">
+      © <span id="year">2026</span> مخزون الملابس — وثيقة سياسة الخصوصية والشروط والأحكام
+    </div>
+  </main>
+
+  <script>
+    (function(){
+      var y = new Date().getFullYear();
+      var el = document.getElementById('year');
+      if (el) el.textContent = String(y);
+    })();
+  </script>
+</body>
+</html>
 
