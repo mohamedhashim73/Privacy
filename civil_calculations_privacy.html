@@ -1,1 +1,501 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>سياسة الخصوصية والشروط والأحكام — حسابات هندسية</title>
+  <style>
+    :root{
+      --bg: #f6f8f7;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: rgba(2, 6, 23, 0.10);
+      --primary: #0B3D2E;
+      --primary-weak: rgba(11, 61, 46, 0.10);
+      --shadow: 0 10px 24px rgba(2, 6, 23, 0.08);
+      --radius: 18px;
+      --max: 980px;
+      --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Noto Sans Arabic", "Noto Naskh Arabic", Arial, sans-serif;
+    }
+
+    *{ box-sizing: border-box; }
+    body{
+      margin: 0;
+      font-family: var(--font);
+      color: var(--text);
+      background: radial-gradient(1200px 600px at 20% 0%, var(--primary-weak), transparent 55%),
+                  radial-gradient(900px 500px at 90% 10%, rgba(2, 132, 199, 0.08), transparent 60%),
+                  var(--bg);
+      line-height: 1.65;
+    }
+
+    a{ color: var(--primary); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 22px 16px 40px;
+    }
+
+    .hero{
+      background: linear-gradient(180deg, rgba(11, 61, 46, 0.12), rgba(11, 61, 46, 0.02));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .brand{
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .title{
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      min-width: 240px;
+    }
+
+    .logo{
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      box-shadow: 0 8px 18px rgba(11, 61, 46, 0.22);
+      flex: 0 0 auto;
+    }
+
+    h1{
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.25;
+      font-weight: 900;
+    }
+
+    .meta{
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .pills{
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .pill{
+      background: rgba(255,255,255,0.7);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    @media (min-width: 860px){
+      .grid{ grid-template-columns: 1fr 1fr; }
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h2{
+      margin: 0 0 10px;
+      font-size: 16px;
+      font-weight: 900;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .card h3{
+      margin: 16px 0 8px;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .badge{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      border: 1px solid var(--border);
+      background: rgba(11, 61, 46, 0.06);
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    ul{
+      margin: 8px 0 0;
+      padding: 0 18px 0 0;
+    }
+
+    li{ margin: 6px 0; }
+
+    .muted{ color: var(--muted); }
+
+    .toc{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .toc a{
+      display: inline-block;
+      padding: 8px 10px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.8);
+      font-size: 13px;
+    }
+
+    .section{
+      margin-top: 14px;
+    }
+
+    .section .card{
+      padding: 18px;
+    }
+
+    .kvs{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    @media (min-width: 860px){
+      .kvs{ grid-template-columns: 1fr 1fr; }
+    }
+
+    .kv{
+      border: 1px dashed var(--border);
+      border-radius: 14px;
+      padding: 12px;
+      background: rgba(2, 6, 23, 0.02);
+    }
+
+    .kv .k{
+      font-weight: 900;
+      margin-bottom: 6px;
+    }
+
+    .kv .v{
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer{
+      margin-top: 14px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .hr{
+      height: 1px;
+      background: var(--border);
+      margin: 14px 0;
+    }
+
+    .notice{
+      border: 1px solid rgba(244, 63, 94, 0.25);
+      background: rgba(244, 63, 94, 0.06);
+      border-radius: 14px;
+      padding: 12px;
+      color: #7f1d1d;
+    }
+
+    .callout{
+      border: 1px solid rgba(11, 61, 46, 0.25);
+      background: rgba(11, 61, 46, 0.06);
+      border-radius: 14px;
+      padding: 12px;
+    }
+
+    .small{
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div class="brand">
+        <div class="title">
+          <div class="logo">ح</div>
+          <div>
+            <h1>سياسة الخصوصية والشروط والأحكام</h1>
+            <div class="meta">الخاصة بتطبيق <strong>حسابات هندسية</strong> — آخر تحديث: <strong>2026-01-31</strong></div>
+          </div>
+        </div>
+        <div class="pills" aria-label="ملخص سريع">
+          <span class="pill"><strong>وضع العمل:</strong> بدون إنترنت (Offline)</span>
+          <span class="pill"><strong>حسابات/تسجيل دخول:</strong> غير موجود</span>
+          <span class="pill"><strong>إعلانات/تتبّع:</strong> غير موجود</span>
+          <span class="pill"><strong>تخزين:</strong> محلي على الجهاز</span>
+        </div>
+      </div>
+
+      <nav class="toc" aria-label="روابط سريعة">
+        <a href="#readme">README</a>
+        <a href="#overview">نظرة عامة</a>
+        <a href="#privacy">سياسة الخصوصية</a>
+        <a href="#terms">الشروط والأحكام</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+    </header>
+
+    <section class="section" id="readme">
+      <div class="card">
+        <h2><span class="badge">README</span> كيفية استخدام هذا الملف</h2>
+        <p class="muted">
+          هذا ملف HTML واحد (مناسب للعرض داخل التطبيق عبر WebView أو للاستضافة كصفحة ثابتة).
+        </p>
+        <div class="kvs">
+          <div class="kv">
+            <div class="k">داخل تطبيق Flutter</div>
+            <div class="v">اعرضه كصفحة داخلية (WebView) أو افتحه عبر متصفح الجهاز.</div>
+          </div>
+          <div class="kv">
+            <div class="k">استضافة ثابتة</div>
+            <div class="v">يمكن رفعه كما هو على أي استضافة ملفات ثابتة (بدون أي مكتبات خارجية).</div>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <p class="small">
+          ملاحظة: هذا الملف لا يستخدم كوكيز ولا تتبّع ولا يحمّل أي موارد خارجية.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="grid">
+        <div class="card">
+          <h2><span class="badge">التطبيق</span> اسم التطبيق</h2>
+          <p><strong>حسابات هندسية</strong></p>
+          <div class="kvs">
+            <div class="kv">
+              <div class="k">الغرض</div>
+              <div class="v">أداة حسابات سريعة للهندسة المدنية للاستخدام في الموقع والمكتب.</div>
+            </div>
+            <div class="kv">
+              <div class="k">المستخدمون المستهدفون</div>
+              <div class="v">المهندسون المدنيون، الفنيون، وإدارة الموقع/المكتب الذين يحتاجون حسابات فورية عملية.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2><span class="badge">الميزات</span> الوظائف الرئيسية</h2>
+          <ul>
+            <li><strong>حسابات الخرسانة</strong>: بلاطات، كمرات، أعمدة (مستطيلة).</li>
+            <li><strong>تقدير الحديد</strong>: تقدير وزن التسليح حسب القطر والطول والعدد.</li>
+            <li><strong>مساحات وحجوم</strong>: مستطيل، دائرة، أسطوانة.</li>
+            <li><strong>تحويل وحدات</strong>: مساحة/حجم/وزن (مثل م²، م³، لتر، كجم، طن).</li>
+            <li><strong>حفظ آخر العمليات</strong> و<strong>المفضلة</strong> لتسهيل الرجوع السريع.</li>
+            <li><strong>إعدادات</strong>: المظهر (فاتح/داكن/حسب النظام) ودقة المنازل العشرية.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h2><span class="badge">الاتصال بالإنترنت</span> هل التطبيق يعمل أونلاين؟</h2>
+        <p>
+          التطبيق مصمم ليعمل <strong>بدون اتصال بالإنترنت</strong>. لا توجد ميزات تتطلب شبكة مثل تسجيل الدخول، المزامنة السحابية، أو التحليلات.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="privacy">
+      <div class="card">
+        <h2><span class="badge">Privacy</span> سياسة الخصوصية</h2>
+
+        <p>
+          توضح هذه السياسة كيفية تعامل تطبيق <strong>حسابات هندسية</strong> مع البيانات. باستخدامك للتطبيق، فإنك تقر بأنك قرأت هذه السياسة وفهمتها.
+        </p>
+
+        <h3 id="data-collection">1) Data Collection (جمع البيانات)</h3>
+        <p>
+          <strong>لا يجمع التطبيق</strong> بيانات شخصية عنك ولا يطلب إنشاء حساب.
+          لا نجمع اسمك، رقم هاتفك، بريدك الإلكتروني، موقعك، معرّفات إعلانية، أو أي بيانات تعريفية.
+        </p>
+
+        <div class="kvs" aria-label="تفاصيل البيانات المخزّنة محلياً">
+          <div class="kv">
+            <div class="k">بيانات يتم حفظها محليًا على جهازك</div>
+            <div class="v">
+              <ul>
+                <li><strong>آخر العمليات (Recent)</strong>: مدخلات الحسابات ونتائجها (مثل أبعاد، أحجام، أوزان).</li>
+                <li><strong>المفضلة (Favorites)</strong>: عناصر قمت بتمييزها كمفضلة للرجوع السريع.</li>
+                <li><strong>الإعدادات</strong>: مثل وضع المظهر ودقة المنازل العشرية.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="kv">
+            <div class="k">بيانات لا يتم جمعها أو إرسالها</div>
+            <div class="v">
+              <ul>
+                <li>لا توجد <strong>حسابات مستخدمين</strong> أو تسجيل دخول.</li>
+                <li>لا توجد <strong>مزامنة سحابية</strong> أو قاعدة بيانات خارجية.</li>
+                <li>لا توجد <strong>تحليلات</strong> أو <strong>تتبّع</strong> داخل التطبيق.</li>
+                <li>لا توجد <strong>إعلانات</strong>.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="small">
+          ملاحظة: قد يقوم نظام التشغيل (Android/iOS) بعمل نسخ احتياطية لبيانات التطبيقات حسب إعدادات جهازك. نحن لا نتحكم في ذلك ولا نصل إليه.
+        </p>
+
+        <h3 id="use-of-data">2) Use of Data (استخدام البيانات)</h3>
+        <p>تُستخدم البيانات المخزنة محليًا فقط بهدف:</p>
+        <ul>
+          <li><strong>تسهيل الاستخدام</strong> عبر عرض آخر العمليات والمفضلة.</li>
+          <li><strong>تخصيص التجربة</strong> عبر الإعدادات (المظهر ودقة النتائج).</li>
+        </ul>
+        <p>لا نستخدم البيانات لأي أغراض تسويقية ولا يتم إرسالها خارج جهازك.</p>
+
+        <h3 id="data-sharing">3) Data Sharing (مشاركة البيانات)</h3>
+        <p>
+          لا يقوم التطبيق بمشاركة بياناتك مع أي جهة خارجية، لأن بياناته التشغيلية محفوظة محليًا على جهازك ولا يتم إرسالها إلى خوادم.
+        </p>
+
+        <h3 id="ads-third-party">4) Ads & Third-Party Services (الإعلانات وخدمات الطرف الثالث)</h3>
+        <p>
+          لا يحتوي التطبيق على إعلانات ولا يستخدم خدمات تتبّع أو تحليلات.
+          يعتمد التطبيق على مكوّنات منصة Flutter ونظام التشغيل لتنفيذ الوظائف الأساسية فقط.
+        </p>
+
+        <h3 id="security">5) Data Security (أمن البيانات)</h3>
+        <p>
+          نطبق مبدأ تقليل البيانات إلى الحد الأدنى؛ البيانات محفوظة محليًا على جهازك.
+          أمن هذه البيانات يعتمد أيضًا على إعدادات جهازك (مثل قفل الشاشة وتشفير الجهاز).
+        </p>
+
+        <h3 id="children">6) Children’s Privacy (خصوصية الأطفال)</h3>
+        <p>
+          التطبيق موجّه للاستخدام الهندسي المهني/التعليمي العام، وليس مخصصًا للأطفال دون سن 13 عامًا.
+          لا نجمع بيانات شخصية عن الأطفال.
+        </p>
+
+        <h3 id="changes">7) Changes to This Policy (التغييرات على هذه السياسة)</h3>
+        <p>
+          قد نقوم بتحديث هذه السياسة من وقت لآخر. سيتم تحديث تاريخ "آخر تحديث" أعلى هذه الصفحة عند إجراء أي تغيير.
+          استمرارك في استخدام التطبيق بعد التحديث يعني موافقتك على السياسة المحدّثة.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="terms">
+      <div class="card">
+        <h2><span class="badge">Terms</span> الشروط والأحكام</h2>
+
+        <p>
+          تحكم هذه الشروط استخدامك لتطبيق <strong>حسابات هندسية</strong>. باستخدامك للتطبيق، فإنك توافق على الالتزام بهذه الشروط.
+        </p>
+
+        <h3 id="app-usage">1) App Usage (استخدام التطبيق)</h3>
+        <ul>
+          <li>التطبيق يوفر أدوات حسابية سريعة للهندسة المدنية لأغراض <strong>مساعدة</strong> المستخدم.</li>
+          <li>نتائج الحسابات تعتمد على <strong>المدخلات</strong> التي يوفّرها المستخدم وعلى صيغ حسابية موضحة داخل التطبيق.</li>
+          <li>قد توجد فروق بسبب التقريب (عدد المنازل العشرية) أو اختلاف وحدات القياس أو الافتراضات الميدانية.</li>
+        </ul>
+
+        <div class="notice" role="note" aria-label="تنبيه هام">
+          <strong>تنبيه هام:</strong> لا يُعد التطبيق بديلاً عن المراجعة الهندسية المعتمدة. يجب التحقق من النتائج ومطابقتها للمخططات والمواصفات والكود المعمول به قبل التنفيذ أو اعتماد أي كميات.
+        </div>
+
+        <h3 id="user-responsibility">2) User Responsibility (مسؤولية المستخدم)</h3>
+        <ul>
+          <li>أنت مسؤول عن إدخال قيم صحيحة وبالوحدات المناسبة.</li>
+          <li>أنت مسؤول عن استخدام النتائج بشكل يتوافق مع متطلبات المشروع والكود والمواصفات.</li>
+          <li>أنت مسؤول عن الحفاظ على سرية جهازك وإعدادات الأمان الخاصة به، إذ إن البيانات محفوظة محليًا على الجهاز.</li>
+        </ul>
+
+        <h3 id="limitation">3) Limitation of Liability (حدود المسؤولية)</h3>
+        <p>
+          إلى أقصى حد يسمح به القانون، لا نتحمل أي مسؤولية عن أي خسائر مباشرة أو غير مباشرة أو تبعية ناتجة عن:
+        </p>
+        <ul>
+          <li>أخطاء إدخال البيانات أو اختيار وحدات قياس غير صحيحة.</li>
+          <li>الاعتماد الكلي على نتائج التطبيق دون تحقق مهني.</li>
+          <li>أي انقطاع أو خلل في الجهاز أو نظام التشغيل أو فقدان البيانات بسبب حذف التطبيق أو إعدادات النسخ الاحتياطي.</li>
+        </ul>
+
+        <h3 id="ownership">4) App Ownership (ملكية التطبيق)</h3>
+        <p>
+          التطبيق ومحتواه (بما في ذلك الواجهة والتصميم والنصوص والصيغ المعروضة داخل التطبيق) محمي بحقوق الملكية الفكرية حيثما ينطبق.
+          لا يجوز نسخ أو إعادة توزيع أو تعديل التطبيق إلا بما تسمح به القوانين أو التراخيص المعمول بها.
+        </p>
+
+        <h3>5) التوافر والتحديثات</h3>
+        <p>
+          قد يتم تحديث التطبيق لإضافة ميزات أو تحسين الأداء أو إصلاح أخطاء. قد تتغير بعض الصيغ أو الواجهات مع التحديثات.
+          يُنصح بالاحتفاظ بنسخة من حساباتك المهمة خارج التطبيق إذا كانت ضرورية لمستندات المشروع.
+        </p>
+
+        <h3>6) إنهاء الاستخدام</h3>
+        <p>
+          يمكنك التوقف عن استخدام التطبيق في أي وقت. يمكنك حذف بيانات التطبيق بمسح "الأخيرة" من داخل التطبيق أو بإلغاء تثبيت التطبيق من جهازك.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="card">
+        <h2><span class="badge">Contact</span> تواصل معنا</h2>
+        <p>
+          لأي استفسارات حول سياسة الخصوصية أو الشروط والأحكام أو ملاحظات تتعلق بالتطبيق، تواصل معنا عبر البريد الإلكتروني التالي:
+        </p>
+        <p style="font-size:16px; font-weight:900;">
+          <a href="mailto:mohamedhashimrezk73@gmail.com">mohamedhashimrezk73@gmail.com</a>
+        </p>
+        <div class="callout">
+          <div class="muted">
+            لا نوفر أرقام هاتف أو عناوين ضمن هذه الصفحة. التواصل يتم عبر البريد الإلكتروني فقط.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      © 2026 — حسابات هندسية. جميع الحقوق محفوظة.
+    </footer>
+  </main>
+</body>
+</html>
 
