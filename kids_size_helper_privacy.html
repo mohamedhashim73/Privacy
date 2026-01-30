@@ -1,1 +1,425 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>مقاس طفلي — سياسة الخصوصية والشروط والأحكام</title>
+    <style>
+      :root{
+        --bg: #F7FBFF;
+        --card: #FFFFFF;
+        --text: #111827;
+        --muted: #6B7280;
+        --border: rgba(17, 24, 39, 0.08);
+        --shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+        --primary: #3FA9F5;   /* sky blue */
+        --secondary: #FFF1A8; /* pastel yellow */
+        --radius: 18px;
+        --maxw: 980px;
+      }
+      *{ box-sizing: border-box; }
+      html, body{ height: 100%; }
+      body{
+        margin: 0;
+        background: radial-gradient(1200px 600px at 20% 0%, rgba(63,169,245,0.18), transparent 60%),
+                    radial-gradient(900px 500px at 80% 10%, rgba(255,241,168,0.45), transparent 55%),
+                    var(--bg);
+        color: var(--text);
+        font-family: ui-sans-serif, system-ui, -apple-system, "SF Pro Text", "Segoe UI", Roboto, Arial, "Noto Sans Arabic", "Noto Naskh Arabic", sans-serif;
+        line-height: 1.75;
+      }
+      a{ color: var(--primary); text-decoration: none; }
+      a:hover{ text-decoration: underline; }
+      .wrap{
+        max-width: var(--maxw);
+        margin: 0 auto;
+        padding: 28px 16px 56px;
+      }
+      .header{
+        display: grid;
+        gap: 14px;
+        padding: 18px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(8px);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+      .brand{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .logo{
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, var(--primary), rgba(63,169,245,0.55));
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        box-shadow: 0 8px 18px rgba(63,169,245,0.25);
+      }
+      h1{
+        margin: 0;
+        font-size: 1.35rem;
+        font-weight: 900;
+        letter-spacing: 0.2px;
+      }
+      .subtitle{
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.98rem;
+      }
+      .meta{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+      .pill{
+        border: 1px solid var(--border);
+        background: #fff;
+        border-radius: 999px;
+        padding: 6px 10px;
+      }
+      .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 14px;
+      }
+      @media (min-width: 900px){
+        .grid{ grid-template-columns: 1.1fr 0.9fr; }
+      }
+      .card{
+        border: 1px solid var(--border);
+        background: var(--card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 18px;
+      }
+      .card h2{
+        margin: 0 0 10px 0;
+        font-size: 1.1rem;
+        font-weight: 900;
+      }
+      .card h3{
+        margin: 16px 0 8px;
+        font-size: 1.0rem;
+        font-weight: 800;
+      }
+      .card p{ margin: 8px 0; }
+      .card ul{ margin: 8px 0 8px 0; padding: 0 18px 0 0; }
+      .card li{ margin: 6px 0; }
+      .toc a{
+        display: block;
+        padding: 10px 12px;
+        border-radius: 14px;
+        border: 1px solid var(--border);
+        margin: 8px 0;
+        background: linear-gradient(180deg, #fff, rgba(63,169,245,0.03));
+      }
+      .toc a:hover{
+        border-color: rgba(63,169,245,0.35);
+        background: linear-gradient(180deg, #fff, rgba(63,169,245,0.06));
+      }
+      .badge{
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border-radius: 999px;
+        padding: 8px 12px;
+        background: rgba(255,241,168,0.7);
+        border: 1px solid rgba(17, 24, 39, 0.08);
+        font-weight: 800;
+      }
+      .note{
+        border-radius: 16px;
+        padding: 12px 14px;
+        border: 1px solid rgba(63,169,245,0.25);
+        background: rgba(63,169,245,0.06);
+        color: #0B3A57;
+      }
+      .footer{
+        margin-top: 14px;
+        color: var(--muted);
+        font-size: 0.92rem;
+        text-align: center;
+      }
+      .hr{
+        height: 1px;
+        background: var(--border);
+        margin: 14px 0;
+      }
+      .mono{
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 0.95em;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="header">
+        <div class="brand">
+          <div class="logo">م</div>
+          <div>
+            <h1>مقاس طفلي — سياسة الخصوصية والشروط والأحكام</h1>
+            <p class="subtitle">وثيقة مخصصة لخصائص التطبيق الحالية: إدارة منتجات محل ملابس أطفال حسب العمر والمقاس مع توصية سريعة — دون حسابات ودون اتصال مطلوب.</p>
+          </div>
+        </div>
+        <div class="meta">
+          <span class="pill"><strong>التطبيق</strong>: مقاس طفلي</span>
+          <span class="pill"><strong>المنصة</strong>: Android / iOS</span>
+          <span class="pill"><strong>وضع العمل</strong>: يعمل دون اتصال (Offline)</span>
+          <span class="pill"><strong>التخزين</strong>: محلي على الجهاز (SQLite)</span>
+        </div>
+        <div class="note">
+          <span class="badge">مهم</span>
+          <p>
+            هذا التطبيق موجه أساسًا لأصحاب/موظفي محلات ملابس الأطفال لتنظيم المنتجات وتقديم توصيات المقاس بسرعة. لا يتطلب إنشاء حساب ولا يجمع بيانات شخصية عن العملاء تلقائيًا.
+          </p>
+        </div>
+      </section>
+
+      <section class="grid">
+        <aside class="card toc" aria-label="جدول المحتويات">
+          <h2>جدول المحتويات</h2>
+          <a href="#context">ملخص التطبيق (السياق)</a>
+          <a href="#privacy">سياسة الخصوصية</a>
+          <a href="#data-collection">جمع البيانات</a>
+          <a href="#use-of-data">استخدام البيانات</a>
+          <a href="#data-sharing">مشاركة البيانات</a>
+          <a href="#third-parties">الإعلانات وخدمات الطرف الثالث</a>
+          <a href="#security">أمن البيانات</a>
+          <a href="#children">خصوصية الأطفال</a>
+          <a href="#changes">تغييرات هذه السياسة</a>
+          <a href="#terms">الشروط والأحكام</a>
+          <a href="#app-usage">استخدام التطبيق</a>
+          <a href="#user-responsibility">مسؤولية المستخدم</a>
+          <a href="#liability">تحديد المسؤولية</a>
+          <a href="#ownership">ملكية التطبيق</a>
+          <a href="#contact">تواصل معنا</a>
+        </aside>
+
+        <section class="card" id="context">
+          <h2>ملخص التطبيق (السياق)</h2>
+          <p>
+            <strong>اسم التطبيق:</strong> مقاس طفلي
+          </p>
+          <p>
+            <strong>الغرض:</strong> مساعدة أصحاب محلات ملابس الأطفال على تنظيم المنتجات حسب <strong>العمر</strong> و<strong>المقاس</strong> وتقديم توصية سريعة للعميل.
+          </p>
+          <p>
+            <strong>الميزات الرئيسية:</strong>
+          </p>
+          <ul>
+            <li>إضافة منتجات مع مدى عمر (شهور/سنوات).</li>
+            <li>اقتراح المقاس تلقائيًا بناءً على العمر.</li>
+            <li>بحث المنتجات بالاسم أو الفئة.</li>
+            <li>فلترة المنتجات حسب العمر أو المقاس.</li>
+            <li>شاشة توصية سريعة لمساعدة موظف المتجر أثناء خدمة العميل.</li>
+            <li>إضافة ملاحظات حول اختلاف القياس (يميل للصغير/مضبوط/يميل للكبير).</li>
+            <li>إعدادات تشمل إعادة ضبط البيانات محليًا.</li>
+          </ul>
+          <p>
+            <strong>هل التطبيق Online/Offline؟</strong> يعمل التطبيق <strong>دون اتصال بالإنترنت</strong> لتشغيل وظائفه الأساسية.
+          </p>
+          <p>
+            <strong>الحسابات والمزامنة:</strong> لا توجد حسابات مستخدمين داخل التطبيق، ولا توجد مزامنة سحابية ضمن الخصائص الحالية.
+          </p>
+          <p>
+            <strong>التخزين المحلي:</strong> يتم تخزين المنتجات والملاحظات التي تُدخلها داخل قاعدة بيانات محلية على الجهاز (SQLite).
+          </p>
+          <div class="hr"></div>
+          <p class="subtitle">
+            إن كنت تستخدم التطبيق داخل متجر، يُستحسن عدم إدخال أي بيانات تعريفية عن الأطفال/العملاء (مثل الأسماء أو أرقام الهواتف) داخل خانة الملاحظات.
+          </p>
+        </section>
+      </section>
+
+      <section class="card" id="privacy" aria-label="سياسة الخصوصية">
+        <h2>سياسة الخصوصية</h2>
+        <p>
+          توضح هذه السياسة كيفية تعامل تطبيق <strong>مقاس طفلي</strong> مع البيانات. صُمّم التطبيق ليعمل <strong>محليًا على الجهاز</strong> لمساعدة إدارة المنتجات داخل متجر ملابس الأطفال.
+        </p>
+        <p class="subtitle">
+          آخر تحديث: 31 يناير 2026
+        </p>
+      </section>
+
+      <section class="card" id="data-collection">
+        <h2>جمع البيانات</h2>
+        <h3>البيانات التي يتم حفظها داخل التطبيق (محليًا على الجهاز)</h3>
+        <p>عند استخدامك للتطبيق، قد تقوم بإدخال بيانات تخص المنتجات، مثل:</p>
+        <ul>
+          <li>اسم المنتج والفئة (اختياري).</li>
+          <li>مدى العمر (من/إلى) ووحدة العمر (شهور/سنوات).</li>
+          <li>المقاس (يُحسب تلقائيًا أو يُدخل يدويًا عند الحاجة).</li>
+          <li>ملاحظة اختلاف القياس (يميل للصغير/مضبوط/يميل للكبير).</li>
+          <li>ملاحظات نصية اختيارية تخص المقاس أو القماش أو التوصية.</li>
+        </ul>
+        <p>
+          تُخزَّن هذه البيانات <strong>على جهازك فقط</strong> داخل قاعدة بيانات محلية (SQLite)، لاستخدامها في البحث والفلترة والتوصية.
+        </p>
+
+        <h3>البيانات التي لا نجمعها</h3>
+        <ul>
+          <li>لا نجمع بيانات حسابات (لا يوجد تسجيل دخول/حسابات داخل التطبيق).</li>
+          <li>لا نجمع بيانات شخصية تلقائيًا (مثل الاسم، البريد الإلكتروني، رقم الهاتف).</li>
+          <li>لا نجمع بيانات الموقع الجغرافي.</li>
+          <li>لا نجمع معلومات دفع أو معاملات مالية.</li>
+          <li>لا نجمع معرفات إعلانية أو ملفات تعريف ارتباط (Cookies) ضمن التطبيق.</li>
+        </ul>
+
+        <h3>بيانات قد يجمعها نظام التشغيل أو متجر التطبيقات</h3>
+        <p class="subtitle">
+          قد تقوم Apple/Google أو نظام التشغيل بجمع بيانات تشخيصية أو معلومات استخدام وفقًا لسياساتهم (على سبيل المثال: تقارير أعطال على مستوى النظام). لا نتحكم في ذلك، ويخضع لسياسات الجهات المذكورة.
+        </p>
+      </section>
+
+      <section class="card" id="use-of-data">
+        <h2>استخدام البيانات</h2>
+        <p>نستخدم البيانات التي تُدخلها داخل التطبيق للأغراض التالية فقط:</p>
+        <ul>
+          <li>عرض المنتجات داخل قائمة المنتجات.</li>
+          <li>تطبيق الفلاتر والبحث.</li>
+          <li>تقديم توصية سريعة بالمقاس وفق العمر.</li>
+          <li>عرض ملاحظات القياس لمساعدة موظف المتجر.</li>
+        </ul>
+        <p>
+          لا نقوم باستخدام بياناتك لأغراض إعلانية أو تتبع أو بيع بيانات.
+        </p>
+      </section>
+
+      <section class="card" id="data-sharing">
+        <h2>مشاركة البيانات</h2>
+        <p>
+          <strong>لا يشارك التطبيق</strong> البيانات التي تُدخلها مع أي طرف ثالث، ولا يتم إرسالها إلى خوادم خارجية ضمن الخصائص الحالية.
+        </p>
+        <p class="subtitle">
+          بما أن البيانات محفوظة محليًا على جهازك، فإن مسؤولية مشاركة الجهاز أو نقل البيانات تقع على عاتقك (مثل مشاركة نسخة احتياطية من الجهاز أو نقل الملفات يدويًا).
+        </p>
+      </section>
+
+      <section class="card" id="third-parties">
+        <h2>الإعلانات وخدمات الطرف الثالث</h2>
+        <p>
+          <strong>لا يحتوي التطبيق على إعلانات</strong> ضمن النسخة الحالية.
+        </p>
+        <p>
+          <strong>لا يستخدم التطبيق خدمات تتبع/تحليلات</strong> (Analytics) أو SDK إعلاني ضمن النسخة الحالية.
+        </p>
+        <p class="subtitle">
+          إذا تمت إضافة خدمات طرف ثالث مستقبلًا (مثل تحليلات أو مزامنة سحابية)، فسيتم تحديث هذه الوثيقة لتوضيح نوع البيانات التي قد يتم جمعها وسبب جمعها وخياراتك.
+        </p>
+      </section>
+
+      <section class="card" id="security">
+        <h2>أمن البيانات</h2>
+        <p>
+          نعتمد على تخزين محلي داخل جهازك. نوصي بما يلي لحماية بيانات المنتجات:
+        </p>
+        <ul>
+          <li>تفعيل قفل الجهاز (رمز/بصمة/Face ID).</li>
+          <li>تحديد صلاحية الوصول للجهاز داخل المتجر.</li>
+          <li>الانتباه عند كتابة الملاحظات: تجنب إدخال بيانات تعريفية عن العملاء أو الأطفال.</li>
+        </ul>
+        <p class="subtitle">
+          رغم اتخاذنا نهجًا يقلل جمع البيانات، لا يمكن ضمان أمان مطلق لأي نظام. استخدامك للتطبيق يعني قبولك لهذا الحد.
+        </p>
+      </section>
+
+      <section class="card" id="children">
+        <h2>خصوصية الأطفال</h2>
+        <p>
+          التطبيق موجَّه لأصحاب/موظفي المتاجر وليس مخصصًا للأطفال للاستخدام المباشر. لا نجمع عمدًا أي بيانات شخصية عن الأطفال.
+        </p>
+        <p>
+          نرجو منك عدم إدخال أي معلومات تعريفية عن طفل أو عميل (مثل الاسم/الهاتف/العنوان) في أي حقل داخل التطبيق، بما في ذلك "الملاحظات".
+        </p>
+      </section>
+
+      <section class="card" id="changes">
+        <h2>تغييرات هذه السياسة</h2>
+        <p>
+          قد نقوم بتحديث سياسة الخصوصية والشروط والأحكام عند إضافة ميزات أو تغيير طريقة عمل التطبيق. سيتم نشر النسخة المحدّثة مع تاريخ "آخر تحديث" أعلاه.
+        </p>
+        <p class="subtitle">
+          استمرار استخدامك للتطبيق بعد التحديث يعني موافقتك على النسخة المحدّثة.
+        </p>
+      </section>
+
+      <section class="card" id="terms">
+        <h2>الشروط والأحكام</h2>
+        <p>
+          باستخدامك لتطبيق <strong>مقاس طفلي</strong>، فإنك توافق على هذه الشروط. إذا لم توافق، يرجى عدم استخدام التطبيق.
+        </p>
+      </section>
+
+      <section class="card" id="app-usage">
+        <h2>استخدام التطبيق</h2>
+        <ul>
+          <li>يُستخدم التطبيق لإدارة بيانات منتجات الملابس داخل متجر (أو للاستخدام الشخصي المشابه) وتقديم توصيات تقريبية للمقاسات.</li>
+          <li>خرائط المقاسات المبنية على العمر هي <strong>إرشادية</strong> وقد تختلف حسب العلامة التجارية والقماش وتصميم القطعة.</li>
+          <li>قد تتطلب بعض الحالات تجربة المنتج أو الاعتماد على خبرة البائع/القياس الفعلي.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="user-responsibility">
+        <h2>مسؤولية المستخدم</h2>
+        <ul>
+          <li>أنت مسؤول عن دقة البيانات التي تُدخلها (العمر/المقاس/الملاحظات).</li>
+          <li>أنت مسؤول عن حماية الجهاز الذي يحتوي على بيانات المنتجات (لأن البيانات تُخزَّن محليًا).</li>
+          <li>لا تقم بإدخال بيانات شخصية حساسة ضمن التطبيق.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="liability">
+        <h2>تحديد المسؤولية</h2>
+        <p>
+          يتم توفير التطبيق "كما هو" دون أي ضمانات صريحة أو ضمنية. لا نضمن أن التوصيات ستكون دقيقة في جميع الحالات، ولا نتحمل مسؤولية أي خسائر مباشرة أو غير مباشرة ناتجة عن:
+        </p>
+        <ul>
+          <li>اعتماد كامل على توصيات المقاس دون مراعاة اختلافات العلامات أو طبيعة القطعة.</li>
+          <li>إدخال بيانات غير صحيحة داخل التطبيق.</li>
+          <li>فقدان البيانات بسبب حذف التطبيق أو إعادة ضبط الجهاز أو مشاكل نظام التشغيل.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="ownership">
+        <h2>ملكية التطبيق</h2>
+        <p>
+          جميع حقوق الملكية الفكرية المتعلقة بالتطبيق (بما في ذلك الواجهة والنصوص والرموز، باستثناء مكونات Flutter مفتوحة المصدر) مملوكة لمالك التطبيق/الناشر. لا يمنحك استخدام التطبيق أي حقوق ملكية.
+        </p>
+        <p class="subtitle">
+          Flutter وحزم الطرف الثالث المستخدمة تخضع لتراخيصها الخاصة.
+        </p>
+      </section>
+
+      <section class="card" id="contact">
+        <h2>تواصل معنا</h2>
+        <p>
+          لأي استفسارات حول سياسة الخصوصية أو الشروط والأحكام، تواصل معنا عبر البريد الإلكتروني:
+        </p>
+        <p class="mono">
+          <a href="mailto:mohamedhashimrezk73@gmail.com">mohamedhashimrezk73@gmail.com</a>
+        </p>
+        <p class="subtitle">
+          لا يتضمن هذا المستند أرقام هواتف أو عناوين فعلية.
+        </p>
+      </section>
+
+      <div class="footer">
+        <p>© مقاس طفلي — وثيقة سياسة الخصوصية والشروط والأحكام</p>
+      </div>
+    </main>
+  </body>
+</html>
+
 
