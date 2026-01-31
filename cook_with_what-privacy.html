@@ -1,1 +1,392 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>سياسة الخصوصية والشروط والأحكام | أطبخ بإيه؟</title>
+  <style>
+    :root{
+      --primary:#FF7A00;
+      --cream:#FFF3E0;
+      --bg:#FFFBF7;
+      --text:#1B1B1B;
+      --muted:#5A5A5A;
+      --card:#FFFFFF;
+      --border:rgba(0,0,0,.08);
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+      --max:920px;
+      --font:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans Arabic", "Noto Naskh Arabic", "Geeza Pro", "Droid Arabic Naskh", sans-serif;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0F0F10;
+        --text:#F1F1F1;
+        --muted:#B8B8B8;
+        --card:#171718;
+        --border:rgba(255,255,255,.10);
+        --shadow:0 16px 40px rgba(0,0,0,.45);
+      }
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--font);
+      background:
+        radial-gradient(900px 420px at 20% -10%, rgba(255,122,0,.16), rgba(255,122,0,0) 60%),
+        radial-gradient(700px 320px at 90% 0%, rgba(255,243,224,.22), rgba(255,243,224,0) 55%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.7;
+    }
+    a{color:var(--primary); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:22px 14px 40px;
+    }
+    header{
+      margin:18px 0 18px;
+      padding:18px 16px;
+      border-radius:var(--radius);
+      background:linear-gradient(135deg, rgba(255,122,0,.16), rgba(255,243,224,.20));
+      border:1px solid var(--border);
+    }
+    .app{
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .title{
+      margin:0;
+      font-size:28px;
+      letter-spacing:.2px;
+    }
+    .subtitle{
+      margin:6px 0 0;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.65);
+      border:1px solid var(--border);
+      color:#2A2A2A;
+      font-size:13px;
+      white-space:nowrap;
+    }
+    @media (prefers-color-scheme: dark){
+      .pill{background:rgba(0,0,0,.25); color:var(--text)}
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:14px;
+    }
+    @media (min-width: 860px){
+      .grid{grid-template-columns: 1.15fr .85fr;}
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:16px;
+    }
+    h2{
+      margin:0 0 10px;
+      font-size:18px;
+      letter-spacing:.2px;
+    }
+    h3{
+      margin:16px 0 8px;
+      font-size:15px;
+      color:var(--text);
+    }
+    p{margin:0 0 10px}
+    ul{margin:8px 0 10px; padding:0 18px}
+    li{margin:6px 0}
+    .toc a{display:block; padding:8px 10px; border-radius:12px}
+    .toc a:hover{background:rgba(255,122,0,.10); text-decoration:none}
+    .small{font-size:13px; color:var(--muted)}
+    .note{
+      padding:12px;
+      border-radius:14px;
+      background:rgba(255,122,0,.10);
+      border:1px solid rgba(255,122,0,.25);
+      color:var(--text);
+    }
+    .kv{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:10px;
+    }
+    @media (min-width: 560px){
+      .kv{grid-template-columns: 1fr 1fr;}
+    }
+    .kv .item{
+      padding:12px;
+      border-radius:14px;
+      border:1px solid var(--border);
+      background:linear-gradient(180deg, rgba(255,255,255,.65), rgba(255,255,255,.35));
+    }
+    @media (prefers-color-scheme: dark){
+      .kv .item{background:rgba(255,255,255,.03)}
+    }
+    .item b{display:block; margin-bottom:4px}
+    footer{
+      margin-top:16px;
+      padding:14px 16px;
+      border-radius:var(--radius);
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.55);
+      color:var(--muted);
+      font-size:13px;
+    }
+    @media (prefers-color-scheme: dark){
+      footer{background:rgba(0,0,0,.25)}
+    }
+    .divider{
+      height:1px;
+      background:var(--border);
+      margin:14px 0;
+    }
+    .tag{
+      display:inline-block;
+      padding:4px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:rgba(255,243,224,.55);
+      color:var(--text);
+      font-size:12px;
+      margin:6px 6px 0 0;
+    }
+    @media (prefers-color-scheme: dark){
+      .tag{background:rgba(255,122,0,.10)}
+    }
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="app">
+        <div>
+          <h1 class="title">سياسة الخصوصية والشروط والأحكام</h1>
+          <p class="subtitle">التطبيق: <b>أطبخ بإيه؟</b> — آخر تحديث: <span class="mono">2026-01-31</span></p>
+        </div>
+        <div class="pill" aria-label="High level summary">
+          يعمل دون اتصال • تخزين محلي على الجهاز • بدون حسابات
+        </div>
+      </div>
+
+      <div class="kv" role="list">
+        <div class="item" role="listitem">
+          <b>فكرة التطبيق</b>
+          يساعدك <b>أطبخ بإيه؟</b> على اختيار وصفات مناسبة بناءً على المكونات المتوفرة لديك في المنزل، مع عرض المكونات الناقصة بشكل اختياري وخطوات طبخ بسيطة.
+        </div>
+        <div class="item" role="listitem">
+          <b>الفئة المستهدفة</b>
+          مستخدمون يبحثون عن اقتراحات طبخ منزلية يومية بسرعة وبواجهة عربية سهلة، دون الحاجة للاتصال بالإنترنت أو إنشاء حساب.
+        </div>
+      </div>
+
+      <div>
+        <span class="tag">مكونات البيت</span>
+        <span class="tag">اقتراح وصفات</span>
+        <span class="tag">مفضلة</span>
+        <span class="tag">خطوات طبخ</span>
+        <span class="tag">إعدادات</span>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="card toc">
+        <h2>المحتويات</h2>
+        <a href="#privacy">سياسة الخصوصية</a>
+        <a href="#data-collection">جمع البيانات</a>
+        <a href="#use-of-data">استخدام البيانات</a>
+        <a href="#data-sharing">مشاركة البيانات</a>
+        <a href="#ads-third-party">الإعلانات وخدمات الطرف الثالث</a>
+        <a href="#security">أمان البيانات</a>
+        <a href="#children">خصوصية الأطفال</a>
+        <a href="#changes">التغييرات على هذه السياسة</a>
+        <a href="#terms">الشروط والأحكام</a>
+        <a href="#app-usage">استخدام التطبيق</a>
+        <a href="#user-responsibility">مسؤولية المستخدم</a>
+        <a href="#liability">حدود المسؤولية</a>
+        <a href="#ownership">ملكية التطبيق</a>
+        <a href="#contact">تواصل معنا</a>
+        <a href="#readme">ملاحظات دمج الملف (README داخل الصفحة)</a>
+      </section>
+
+      <aside class="card">
+        <h2>ملخص سريع</h2>
+        <div class="note">
+          <p><b>لا نجمع بيانات شخصية</b> مثل الاسم أو البريد أو الموقع. بياناتك (المكونات، المفضلة، الإعدادات) تُحفظ <b>محليًا على جهازك</b> فقط لتعمل الميزات دون اتصال.</p>
+        </div>
+        <div class="divider"></div>
+        <p class="small">
+          إذا قمت بحذف التطبيق أو مسح بياناته من إعدادات النظام، فقد تفقد بياناتك المحلية (المكونات والمفضلة والإعدادات).
+        </p>
+      </aside>
+    </div>
+
+    <section class="card" id="privacy">
+      <h2>سياسة الخصوصية</h2>
+      <p>
+        توضح هذه السياسة كيفية تعامل تطبيق <b>أطبخ بإيه؟</b> مع البيانات. تم تصميم التطبيق ليعمل <b>دون اتصال بالإنترنت</b> وبأقل قدر ممكن من البيانات، مع حفظ بيانات الاستخدام الأساسية محليًا على الجهاز لتمكين وظائف التطبيق.
+      </p>
+      <p class="small">
+        ينطبق هذا المستند على استخدامك للتطبيق على الأجهزة المحمولة، وأي نسخة مستضافة من هذه الصفحة قد يتم عرضها داخل التطبيق أو خارجه كمستند معلوماتي.
+      </p>
+
+      <h3 id="data-collection">1) جمع البيانات (Data Collection)</h3>
+      <p>يقوم التطبيق بجمع/تخزين البيانات التالية <b>محليًا على جهازك</b> فقط:</p>
+      <ul>
+        <li><b>قائمة المكونات المتوفرة</b> التي تضيفها يدويًا (مثل: طماطم، بصل).</li>
+        <li><b>الوصفات المفضلة</b> (معرفات الوصفات التي اخترتها كمفضلة).</li>
+        <li><b>تفضيلات الإعدادات</b> مثل: إظهار المكونات الناقصة، عرض الوصفات الجاهزة فقط، وضع المظهر (فاتح/داكن/حسب النظام).</li>
+      </ul>
+
+      <p>لا يقوم التطبيق بجمع أو طلب أو تتبع البيانات التالية:</p>
+      <ul>
+        <li>الاسم، رقم الهاتف، العنوان، أو أي معرفات شخصية مماثلة.</li>
+        <li>الموقع الجغرافي.</li>
+        <li>قائمة جهات الاتصال، الرسائل، الصور، الملفات، الكاميرا أو الميكروفون.</li>
+        <li>معرّفات إعلانية أو تحليلات استخدام أو تتبع سلوكي.</li>
+        <li>بيانات دفع/اشتراكات.</li>
+      </ul>
+
+      <h3 id="use-of-data">2) استخدام البيانات (Use of Data)</h3>
+      <p>تُستخدم البيانات المحلية فقط لتحقيق الوظائف التالية داخل التطبيق:</p>
+      <ul>
+        <li>اقتراح الوصفات المناسبة بناءً على المكونات المتوفرة/المحددة.</li>
+        <li>عرض المكونات الناقصة (اختياريًا) لتسهيل اتخاذ قرار الطهي.</li>
+        <li>حفظ المفضلة لتسهيل الوصول إليها لاحقًا دون اتصال.</li>
+        <li>تطبيق إعداداتك المفضلة داخل واجهة المستخدم.</li>
+      </ul>
+
+      <h3 id="data-sharing">3) مشاركة البيانات (Data Sharing)</h3>
+      <p>
+        <b>لا يشارك التطبيق بياناتك مع أي طرف ثالث</b> لأن البيانات تُحفظ محليًا على الجهاز ولا توجد مزامنة سحابية أو حسابات.
+      </p>
+
+      <h3 id="ads-third-party">4) الإعلانات وخدمات الطرف الثالث (Ads & Third-Party Services)</h3>
+      <p>
+        التطبيق <b>لا يعرض إعلانات</b> ولا يدمج خدمات تحليلات أو تتبع أو شبكات إعلانية. كما لا يستخدم ملفات تعريف الارتباط (Cookies) داخل التطبيق.
+      </p>
+      <p class="small">
+        ملاحظة: إذا قمت بفتح هذه الصفحة من متصفح إنترنت خارج التطبيق، فقد يطبّق مزود الاستضافة/المتصفح سياساته الخاصة. التطبيق نفسه لا يضيف أدوات تتبع إلى هذه الصفحة.
+      </p>
+
+      <h3 id="security">5) أمان البيانات (Data Security)</h3>
+      <p>
+        يتم حفظ بياناتك (المكونات، المفضلة، الإعدادات) في تخزين محلي على جهازك (مثل قاعدة بيانات محلية وإعدادات محلية). نوصي بما يلي:
+      </p>
+      <ul>
+        <li>حماية جهازك بكلمة مرور/بصمة واستخدام ميزات الأمان المدمجة بالنظام.</li>
+        <li>تجنب مشاركة جهازك مع الآخرين إذا كنت ترغب في الحفاظ على خصوصية بياناتك داخل التطبيق.</li>
+      </ul>
+      <p class="small">
+        لا يمكن ضمان أمان مطلق لأي نظام، لكن تصميم التطبيق يقلل المخاطر عبر عدم نقل البيانات خارج جهازك.
+      </p>
+
+      <h3 id="children">6) خصوصية الأطفال (Children’s Privacy)</h3>
+      <p>
+        التطبيق مخصص للاستخدام العام/العائلي. لا نجمع عن قصد معلومات شخصية من الأطفال. إذا كنت ولي أمر وتعتقد أن طفلًا قد أدخل معلومات شخصية داخل التطبيق، يرجى التواصل معنا لإرشادك لخطوات الإزالة (وغالبًا تكون عبر حذف بيانات التطبيق أو حذف التطبيق نفسه).
+      </p>
+
+      <h3 id="changes">7) التغييرات على هذه السياسة (Changes to This Policy)</h3>
+      <p>
+        قد نقوم بتحديث هذه السياسة عند إضافة ميزات جديدة أو تحسينات. سيتم تعديل تاريخ “آخر تحديث” في أعلى الصفحة. ننصح بمراجعتها دوريًا.
+      </p>
+    </section>
+
+    <section class="card" id="terms">
+      <h2>الشروط والأحكام (Terms & Conditions)</h2>
+      <p>
+        باستخدامك لتطبيق <b>أطبخ بإيه؟</b> فإنك توافق على هذه الشروط. إذا لم توافق، يرجى عدم استخدام التطبيق.
+      </p>
+
+      <h3 id="app-usage">1) استخدام التطبيق (App Usage)</h3>
+      <ul>
+        <li>التطبيق يقدم <b>اقتراحات وصفات</b> بناءً على المكونات التي تدخلها أنت، بالإضافة إلى وصفات نموذجية داخل التطبيق.</li>
+        <li>التطبيق يعمل <b>دون اتصال بالإنترنت</b> ولا يتطلب إنشاء حساب.</li>
+        <li>قد تختلف النتائج تبعًا لطريقة كتابة أسماء المكونات وتوفرها.</li>
+      </ul>
+
+      <h3 id="user-responsibility">2) مسؤولية المستخدم (User Responsibility)</h3>
+      <ul>
+        <li><b>سلامة الغذاء والحساسية:</b> أنت المسؤول عن التأكد من صلاحية المكونات، مراعاة الحساسية الغذائية، واتباع ممارسات الطهي الآمنة.</li>
+        <li><b>الدقة:</b> قد تحتوي الوصفات على تبسيط لخطوات الطهي؛ استخدم حكمك وخبرتك، وراعي درجات حرارة الطهي والأزمنة المناسبة.</li>
+        <li><b>المحتوى الذي تدخله:</b> أنت مسؤول عن المكونات التي تضيفها وأي استخدام للتطبيق على جهازك.</li>
+      </ul>
+
+      <h3 id="liability">3) حدود المسؤولية (Limitation of Liability)</h3>
+      <p>
+        يتم توفير التطبيق “كما هو” ووفق المتاح. إلى الحد الذي يسمح به القانون، لا نتحمل مسؤولية أي أضرار مباشرة أو غير مباشرة أو عرضية أو تبعية ناتجة عن:
+      </p>
+      <ul>
+        <li>استخدام الوصفات أو الاعتماد على الاقتراحات دون مراعاة السلامة الغذائية.</li>
+        <li>أي فقدان للبيانات المحلية بسبب حذف التطبيق، إعادة ضبط الجهاز، أو مشاكل النظام/التخزين.</li>
+        <li>انقطاع أو أعطال فنية خارج سيطرتنا.</li>
+      </ul>
+
+      <h3 id="ownership">4) ملكية التطبيق (App Ownership)</h3>
+      <ul>
+        <li>التطبيق وواجهته ومحتواه وحقوقه الفكرية مملوكة لأصحابه/مطوريه ما لم يُذكر خلاف ذلك.</li>
+        <li>لا يجوز نسخ التطبيق أو إعادة توزيعه أو عكس هندسته أو استخدامه بما يخالف القوانين المعمول بها.</li>
+      </ul>
+
+      <h3>5) إنهاء الاستخدام</h3>
+      <p>
+        يمكنك التوقف عن استخدام التطبيق في أي وقت. ولإزالة البيانات المحلية، يمكنك حذف التطبيق أو مسح بياناته من إعدادات الجهاز.
+      </p>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>تواصل معنا (Contact Us)</h2>
+      <p>
+        لأي استفسارات حول سياسة الخصوصية أو الشروط والأحكام أو طلبات متعلقة بالتطبيق، تواصل معنا عبر البريد الإلكتروني التالي:
+      </p>
+      <p>
+        <a href="mailto:mohamedhashimrezk73@gmail.com">mohamedhashimrezk73@gmail.com</a>
+      </p>
+      <p class="small">
+        يرجى تضمين نوع جهازك ونظام التشغيل وإصدار التطبيق (إن أمكن) لتسريع الدعم.
+      </p>
+    </section>
+
+    <section class="card" id="readme">
+      <h2>ملاحظات دمج الملف (README داخل الصفحة)</h2>
+      <p class="small">
+        يمكنك استخدام هذا الملف كما هو داخل مشروع Flutter أو استضافته كصفحة ثابتة. اقتراحات شائعة:
+      </p>
+      <ul>
+        <li>وضع الملف باسم: <span class="mono">privacy_terms.html</span> داخل مجلد مثل <span class="mono">assets/legal/</span> ثم عرضه عبر WebView داخل التطبيق.</li>
+        <li>استضافته كصفحة ثابتة وربطها داخل شاشة “الإعدادات” (لا يتطلب ذلك جمع بيانات من المستخدم).</li>
+        <li>تحديث تاريخ “آخر تحديث” عند أي تغيير في الميزات أو طريقة معالجة البيانات.</li>
+      </ul>
+      <p class="small">
+        ملاحظة: هذا المستند مصمم خصيصًا لميزات التطبيق الحالية (تخزين محلي، بدون حسابات، بدون إعلانات، بدون مزامنة). إذا أُضيفت لاحقًا مزامنة سحابية/حسابات/تحليلات، يجب تحديث السياسة وفقًا لذلك قبل الإطلاق.
+      </p>
+    </section>
+
+    <footer>
+      © <span class="mono">2026</span> — أطبخ بإيه؟ • هذا المستند مقدم لأغراض معلوماتية داخل التطبيق/صفحة ثابتة، ويُرجى مراجعة الامتثال القانوني وفق متطلبات بلد النشر ومتجر التطبيقات.
+    </footer>
+  </div>
+</body>
+</html>
+
 
