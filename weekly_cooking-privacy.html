@@ -1,1 +1,375 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>طبخ الأسبوع - سياسة الخصوصية والشروط والأحكام</title>
+  <style>
+    :root{
+      --bg: #f6f7f5;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: rgba(17,24,39,.12);
+      --primary: #556B2F; /* Olive Green */
+      --primary-weak: rgba(85,107,47,.12);
+      --shadow: 0 10px 30px rgba(17,24,39,.08);
+      --radius: 18px;
+      --maxw: 920px;
+    }
+    *{ box-sizing: border-box; }
+    body{
+      margin: 0;
+      background: radial-gradient(1200px 800px at 20% 0%, var(--primary-weak), transparent 60%),
+                  radial-gradient(900px 700px at 90% 10%, rgba(255,255,255,.7), transparent 50%),
+                  var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Noto Sans Arabic", "Noto Kufi Arabic", "Tajawal", Arial, sans-serif;
+      line-height: 1.75;
+    }
+    a{ color: var(--primary); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 28px 16px 40px;
+    }
+    .header{
+      display: grid;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .brand{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .appname{
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: .2px;
+      margin: 0;
+      color: var(--primary);
+    }
+    .tag{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.75);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    .subtitle{
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .grid{
+      display: grid;
+      gap: 14px;
+      grid-template-columns: 1fr;
+      margin-top: 14px;
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px 16px;
+    }
+    @media (min-width: 920px){
+      .card{ padding: 22px 22px; }
+    }
+
+    h2{
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: var(--text);
+    }
+    h3{
+      margin: 16px 0 8px;
+      font-size: 15px;
+      color: var(--text);
+    }
+    p{ margin: 0 0 10px; }
+    ul{ margin: 0 0 10px; padding: 0 18px 0 0; }
+    li{ margin: 6px 0; }
+
+    .notice{
+      border-inline-start: 4px solid var(--primary);
+      background: rgba(85,107,47,.06);
+      padding: 12px 12px;
+      border-radius: 14px;
+    }
+    .kvs{
+      display: grid;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .kv{
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 10px;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(255,255,255,.7);
+    }
+    .k{
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .v{
+      font-size: 14px;
+    }
+    @media (max-width: 520px){
+      .kv{ grid-template-columns: 1fr; }
+    }
+
+    .footer{
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+    .pillrow{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .pill{
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.75);
+      color: var(--muted);
+      font-size: 12.5px;
+    }
+    .divider{
+      height: 1px;
+      background: var(--border);
+      margin: 12px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <header class="header">
+      <div class="brand">
+        <h1 class="appname">طبخ الأسبوع</h1>
+        <span class="tag">سياسة الخصوصية + الشروط والأحكام</span>
+      </div>
+      <p class="subtitle">
+        وثيقة رسمية توضح كيف يعمل التطبيق وما الذي يتم جمعه من بيانات (وما الذي لا يتم جمعه).
+        هذه الصفحة مناسبة للاستخدام داخل التطبيق أو كنص ثابت على الويب.
+      </p>
+    </header>
+
+    <section class="grid">
+      <section class="card">
+        <h2>ملخص التطبيق (على طريقة README)</h2>
+        <p>
+          <strong>طبخ الأسبوع</strong> هو تطبيق لتخطيط وجبات الأسبوع لتقليل ضغط اتخاذ القرار يوميًا وتنظيم طبخ المنزل.
+          يتيح لك تخطيط 7 أيام وتعيين وجبات <strong>الفطور</strong> و<strong>الغداء</strong> و<strong>العشاء</strong>، ويولّد تلقائيًا قائمة مشتريات اعتمادًا على اختياراتك.
+        </p>
+
+        <div class="pillrow" aria-label="المزايا الأساسية">
+          <span class="pill">مخطط أسبوعي (7 أيام)</span>
+          <span class="pill">فطور / غداء / عشاء</span>
+          <span class="pill">قائمة مشتريات تلقائية</span>
+          <span class="pill">حفظ خطط مفضلة</span>
+          <span class="pill">عرض وصفة مبسط</span>
+          <span class="pill">يعمل بدون إنترنت</span>
+          <span class="pill">الإعدادات</span>
+          <span class="pill">دعم عربي RTL</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="notice">
+          <p style="margin:0;">
+            <strong>نقطة مهمة:</strong> التطبيق يعمل محليًا على جهازك ويخزّن البيانات محليًا (SQLite + تفضيلات محلية).
+            لا توجد حسابات، ولا مزامنة سحابية، ولا تتبع/إعلانات ضمن التطبيق وفقًا للبناء الحالي للمشروع.
+          </p>
+        </div>
+
+        <div class="kvs" role="list">
+          <div class="kv" role="listitem">
+            <div class="k">اسم التطبيق</div>
+            <div class="v">طبخ الأسبوع</div>
+          </div>
+          <div class="kv" role="listitem">
+            <div class="k">الغرض</div>
+            <div class="v">تخطيط وجبات أسبوعية وتنظيم طبخ المنزل وتقليل ضغط القرار اليومي</div>
+          </div>
+          <div class="kv" role="listitem">
+            <div class="k">الاتصال بالإنترنت</div>
+            <div class="v">غير مطلوب للاستخدام الأساسي (Offline-Only في الميزات الحالية)</div>
+          </div>
+          <div class="kv" role="listitem">
+            <div class="k">حسابات/تسجيل دخول</div>
+            <div class="v">غير موجود</div>
+          </div>
+          <div class="kv" role="listitem">
+            <div class="k">التخزين</div>
+            <div class="v">محلي على الجهاز (قاعدة بيانات SQLite + تفضيلات محلية)</div>
+          </div>
+          <div class="kv" role="listitem">
+            <div class="k">الفئة المستهدفة</div>
+            <div class="v">العائلات والطهاة المنزليون وكل من يرغب بتنظيم الوجبات الأسبوعية</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>سياسة الخصوصية</h2>
+        <p><strong>تاريخ السريان:</strong> 2026-01-31</p>
+
+        <h3>1) نطاق هذه السياسة</h3>
+        <p>
+          تنطبق هذه السياسة على تطبيق <strong>طبخ الأسبوع</strong> وتشرح كيفية تعامل التطبيق مع البيانات عند استخدام ميزات تخطيط الوجبات،
+          حفظ الخطط المفضلة، عرض الوصفات، توليد قائمة المشتريات، والإعدادات.
+        </p>
+
+        <h3>2) Data Collection (جمع البيانات)</h3>
+        <p>
+          التطبيق مصمم ليعمل <strong>محليًا</strong> دون الحاجة لإنشاء حساب أو إدخال بيانات تعريف شخصية.
+          البيانات التي يتعامل معها التطبيق هي بيانات وظيفية تتعلق بتنظيم الوجبات داخل الجهاز.
+        </p>
+        <ul>
+          <li><strong>بيانات يقوم المستخدم بإنشائها داخل التطبيق:</strong> اختيار الوصفات، تعيينها لأيام الأسبوع (فطور/غداء/عشاء)، وحفظ خطط مفضلة.</li>
+          <li><strong>قائمة المشتريات:</strong> يتم توليدها محليًا استنادًا إلى المكونات الخاصة بالوصفات المختارة.</li>
+          <li><strong>الإعدادات:</strong> مثل تفضيل وضع المظهر (فاتح/داكن/تلقائي) وبداية الأسبوع.</li>
+        </ul>
+        <p>
+          <strong>ما لا يتم جمعه:</strong> لا نقوم بجمع الاسم، رقم الهاتف، العنوان، الموقع الجغرافي، جهات الاتصال، الصور، أو أي معرفات شخصية عنك.
+          لا توجد آليات تتبع/تحليلات أو ملفات تعريف ارتباط (Cookies) ضمن التطبيق الحالي.
+        </p>
+
+        <h3>3) Use of Data (استخدام البيانات)</h3>
+        <p>
+          تُستخدم البيانات فقط لتقديم وظائف التطبيق، ومنها:
+        </p>
+        <ul>
+          <li>عرض مخطط أسبوعي منظم.</li>
+          <li>حفظ واسترجاع خططك المفضلة محليًا.</li>
+          <li>توليد قائمة مشتريات تلقائية بناءً على الوجبات المحددة.</li>
+          <li>حفظ إعداداتك لتحسين تجربة الاستخدام.</li>
+        </ul>
+
+        <h3>4) Data Sharing (مشاركة البيانات)</h3>
+        <p>
+          <strong>لا يقوم التطبيق بمشاركة بياناتك</strong> مع أي جهة خارجية لأن البيانات تبقى على جهازك ولا توجد مزامنة أو رفع للسحابة في البناء الحالي.
+        </p>
+
+        <h3>5) Ads & Third-Party Services (الإعلانات وخدمات الطرف الثالث)</h3>
+        <p>
+          التطبيق لا يتضمن إعلانات ولا يستخدم خدمات تحليلات أو تتبع طرف ثالث في الميزات الحالية.
+          إذا تمت إضافة خدمات طرف ثالث مستقبلًا (مثل تحليلات اختيارية أو مزامنة سحابية)، سيتم تحديث هذه السياسة بوضوح قبل/عند الإتاحة.
+        </p>
+
+        <h3>6) Data Security (أمن البيانات)</h3>
+        <p>
+          يتم حفظ البيانات محليًا على جهازك. أمن البيانات يعتمد أيضًا على إعدادات جهازك (مثل قفل الشاشة والتشفير ونسخ الاحتياطي للجهاز).
+          ننصح بالحفاظ على جهازك محدّثًا واستخدام قفل شاشة لحماية بياناتك.
+        </p>
+
+        <h3>7) Children’s Privacy (خصوصية الأطفال)</h3>
+        <p>
+          التطبيق لا يستهدف الأطفال بشكل خاص ولا يجمع بيانات شخصية. إن كان المستخدم قاصرًا، يجب أن يكون استخدامه تحت إشراف ولي الأمر وفقًا للقوانين المحلية.
+        </p>
+
+        <h3>8) Changes to This Policy (التغييرات على هذه السياسة)</h3>
+        <p>
+          قد نقوم بتحديث هذه السياسة عند إضافة ميزات جديدة أو تغيير طريقة عمل البيانات. سيتم نشر النسخة المحدثة مع تاريخ سريان جديد.
+        </p>
+
+        <h3>9) Contact Us (اتصل بنا)</h3>
+        <p>
+          لأي استفسارات حول الخصوصية أو هذه السياسة، تواصل عبر البريد الإلكتروني:
+          <a href="mailto:mohamedhashimrezk73@gmail.com">mohamedhashimrezk73@gmail.com</a>
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Terms & Conditions (الشروط والأحكام)</h2>
+        <p><strong>تاريخ السريان:</strong> 2026-01-31</p>
+
+        <h3>1) قبول الشروط</h3>
+        <p>
+          باستخدامك لتطبيق <strong>طبخ الأسبوع</strong>، فإنك توافق على هذه الشروط. إذا كنت لا توافق، يرجى التوقف عن استخدام التطبيق.
+        </p>
+
+        <h3>2) App Usage (استخدام التطبيق)</h3>
+        <p>
+          الغرض من التطبيق هو مساعدة المستخدم على تنظيم الوجبات الأسبوعية وتوليد قائمة مشتريات. لا يقدم التطبيق نصائح طبية أو غذائية متخصصة.
+          أي قرارات غذائية (حساسيات، أنظمة صحية، مكونات) تقع ضمن مسؤولية المستخدم.
+        </p>
+
+        <h3>3) User Responsibility (مسؤولية المستخدم)</h3>
+        <ul>
+          <li>أنت مسؤول عن صحة ودقة اختياراتك داخل التطبيق (الوصفات/المكونات/التخطيط).</li>
+          <li>أنت مسؤول عن التحقق من سلامة المكونات ومدى ملاءمتها للحساسية أو القيود الغذائية الخاصة بك أو بأسرتك.</li>
+          <li>يجب استخدام التطبيق بطريقة قانونية وعدم إساءة استخدامه.</li>
+        </ul>
+
+        <h3>4) Offline Use & Local Storage (الاستخدام بدون إنترنت والتخزين المحلي)</h3>
+        <p>
+          التطبيق يعمل محليًا ويخزّن بياناتك على جهازك. قد يؤدي حذف التطبيق أو مسح بياناته أو إعادة ضبط الجهاز إلى فقدان البيانات المخزنة محليًا.
+        </p>
+
+        <h3>5) Limitation of Liability (تحديد المسؤولية)</h3>
+        <p>
+          إلى الحد المسموح به قانونًا، لا نتحمل المسؤولية عن أي أضرار مباشرة أو غير مباشرة أو عرضية أو تبعية ناتجة عن استخدام التطبيق،
+          بما في ذلك على سبيل المثال لا الحصر: فقدان البيانات المحلية نتيجة حذف التطبيق/الجهاز، أو الاعتماد على المعلومات داخل التطبيق دون تحقق.
+        </p>
+
+        <h3>6) App Ownership (ملكية التطبيق)</h3>
+        <p>
+          التطبيق وواجهته وعناصره البرمجية هي ملكية لأصحاب الحقوق. يمنحك التطبيق ترخيصًا محدودًا وغير حصري وقابل للإلغاء لاستخدامه للاستخدام الشخصي.
+        </p>
+
+        <h3>7) Termination (إنهاء الاستخدام)</h3>
+        <p>
+          يمكنك التوقف عن استخدام التطبيق في أي وقت. كما قد نقوم بتحديث أو إيقاف التطبيق أو بعض ميزاته في أي وقت لأسباب تقنية أو تشغيلية.
+        </p>
+
+        <h3>8) Changes to Terms (تغييرات الشروط)</h3>
+        <p>
+          قد يتم تحديث هذه الشروط من وقت لآخر. استمرارك في استخدام التطبيق بعد نشر التحديثات يعني قبولك للشروط المحدثة.
+        </p>
+
+        <h3>9) Contact Us (اتصل بنا)</h3>
+        <p>
+          لأي استفسارات حول الشروط والأحكام، تواصل عبر البريد الإلكتروني:
+          <a href="mailto:mohamedhashimrezk73@gmail.com">mohamedhashimrezk73@gmail.com</a>
+        </p>
+      </section>
+
+      <section class="footer">
+        <p>
+          © <span id="y">2026</span> طبخ الأسبوع — سياسة الخصوصية والشروط والأحكام
+        </p>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    (function(){ try{ document.getElementById('y').textContent = String(new Date().getFullYear()); }catch(e){} })();
+  </script>
+</body>
+</html>
+
 
