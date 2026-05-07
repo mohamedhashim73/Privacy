@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>الدعم الفني - سجّل</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, "Cairo", sans-serif;
+      background: #f8f8f8;
+      direction: rtl;
+      margin: 0;
+      padding: 20px;
+      color: #1B1620;
+    }
+
+    .card {
+      max-width: 800px;
+      margin: 30px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 30px;
+      color: #074F60;
+    }
+
+    h2 {
+      margin-top: 35px;
+      font-size: 22px;
+      color: #074F60;
+    }
+
+    p, li {
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    ul {
+      padding-right: 20px;
+    }
+
+    .email-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .email-link {
+      color: #074F60;
+      text-decoration: none;
+      font-weight: bold;
+      word-break: break-all;
+    }
+
+    .copy-btn {
+      background: #074F60;
+      color: #ffffff;
+      border: none;
+      padding: 7px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    .copy-btn:hover {
+      background: #053a47;
+    }
+
+    .section {
+      margin-top: 25px;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+
+      .card {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p, li {
+        font-size: 15px;
+      }
+
+      .copy-btn {
+        padding: 6px 10px;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <h1>سجّل</h1>
+
+    <p>
+      سجّل هو تطبيق لإدارة المخزون والمبيعات والمصاريف والفواتير،
+      مصمم لمساعدة الشركات والأفراد على إدارة أعمالهم بكفاءة وسهولة.
+    </p>
+
+    <div class="section">
+      <h2>نبذة عن التطبيق</h2>
+
+      <p>
+        يوفر تطبيق سجّل نظاماً متكاملاً لإدارة المخزون والمبيعات والمشتريات
+        والمصاريف والفواتير من خلال واجهة عربية سهلة الاستخدام وتصميم حديث
+        يساعدك على تنظيم أعمالك اليومية بكفاءة.
+      </p>
+
+      <p>
+        يمكنك إدارة المنتجات والتصنيفات، إنشاء فواتير البيع والشراء،
+        متابعة المصاريف والمدفوعات، والحصول على تقارير وإحصائيات مفصلة
+        تساعدك على اتخاذ قرارات مالية أفضل.
+      </p>
+
+      <p>
+        يدعم التطبيق أيضاً إدارة أكثر من محل أو فرع، بالإضافة إلى إدارة
+        العملاء والموردين في مكان واحد.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>المميزات الرئيسية</h2>
+
+      <ul>
+        <li>إدارة المخزون وتنظيم المنتجات</li>
+        <li>إدارة فواتير المبيعات والمشتريات</li>
+        <li>تسجيل وتتبع المصاريف اليومية</li>
+        <li>إدارة المدفوعات والمستحقات</li>
+        <li>تقارير وإحصائيات يومية وشهرية وسنوية</li>
+        <li>إدارة محلات وفروع متعددة</li>
+        <li>إدارة العملاء والموردين</li>
+        <li>واجهة عربية سهلة الاستخدام</li>
+        <li>تصميم حديث وسريع</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>الخصوصية والبيانات</h2>
+
+      <p>
+        يستخدم التطبيق Firebase Cloud Firestore لتخزين ومزامنة البيانات
+        بشكل آمن بين الأجهزة، كما يتم استخدام التخزين المحلي لتحسين الأداء
+        وسرعة الوصول إلى البيانات.
+      </p>
+
+      <p>
+        لا يقوم التطبيق بجمع بيانات شخصية حساسة أو مشاركة بيانات المستخدم
+        مع أي طرف ثالث.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>الدعم الفني</h2>
+
+      <p>
+        في حال وجود أي استفسار أو مشكلة متعلقة بتطبيق سجّل،
+        يرجى التواصل معنا عبر البريد الإلكتروني التالي:
+      </p>
+
+      <div class="email-container">
+        <a
+          id="supportEmail"
+          class="email-link"
+          href="mailto:mohamedhashimrezk73@gmail.com"
+        >
+          mohamedhashimrezk73@gmail.com
+        </a>
+
+        <button class="copy-btn" onclick="copyEmail()">
+          نسخ البريد
+        </button>
+      </div>
+
+      <p>
+        سنكون سعداء بمساعدتك في أقرب وقت ممكن.
+      </p>
+    </div>
+
+  </div>
+
+  <script>
+    function copyEmail() {
+      const email =
+        document.getElementById('supportEmail').textContent.trim();
+
+      navigator.clipboard.writeText(email)
+        .then(() => {
+          alert('تم نسخ البريد الإلكتروني!');
+        })
+        .catch((err) => {
+          alert('حدث خطأ أثناء النسخ');
+          console.error(err);
+        });
+    }
+  </script>
+
+</body>
+</html>
