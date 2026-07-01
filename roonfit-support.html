@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Support - Roonfit</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 20px;
+      color: #1B1620;
+    }
+
+    .card {
+      max-width: 700px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #0F766E;
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .email-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 24px 0;
+    }
+
+    .email-link {
+      color: #0F766E;
+      font-weight: 600;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .copy-btn {
+      border: none;
+      background: #0F766E;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .copy-btn:hover {
+      background: #0b5c56;
+    }
+
+    @media (max-width:480px){
+      .card{
+        padding:20px;
+      }
+
+      h1{
+        font-size:24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <h1>Support</h1>
+
+  <p>
+    Need help with Roonfit?
+    If you have any questions, experience a problem, or would like to report a bug,
+    we're here to help.
+  </p>
+
+  <p>
+    Contact our support team by email:
+  </p>
+
+  <div class="email-container">
+    <a
+      id="supportEmail"
+      class="email-link"
+      href="mailto:support@roonfit.app">
+      support@roonfit.app
+    </a>
+
+    <button class="copy-btn" onclick="copyEmail()">
+      Copy Email
+    </button>
+  </div>
+
+  <p>
+    We aim to respond as quickly as possible and appreciate your feedback.
+  </p>
+
+</div>
+
+<script>
+function copyEmail() {
+  const email = document.getElementById("supportEmail").textContent.trim();
+
+  navigator.clipboard.writeText(email)
+    .then(() => alert("Email copied successfully!"))
+    .catch(() => alert("Unable to copy email."));
+}
+</script>
+
+</body>
+</html>
